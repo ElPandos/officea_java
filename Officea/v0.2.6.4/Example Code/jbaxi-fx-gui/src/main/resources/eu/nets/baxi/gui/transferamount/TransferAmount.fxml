@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="tranferAmountPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="699.0" prefWidth="759.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.transferamount.TransferAmountController">
+  <children>
+    <Label fx:id="operatorIdlbl" prefHeight="21.0" prefWidth="68.0" text="Operator ID" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0" />
+    <TextField fx:id="operIdTxt" prefHeight="21.0" prefWidth="156.0" text="4321" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="20.0" />
+    <TitledPane fx:id="amountPane" animated="false" collapsible="false" prefWidth="313.0" text="Amounts" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="47.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="352.0">
+          <children>
+            <Label fx:id="type1lbl" prefHeight="21.0" text="Type 1" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0" />
+            <Label fx:id="amount1lbl" prefHeight="21.0" text="Amount 1" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="10.0" />
+            <ComboBox fx:id="type1Combo" prefHeight="21.0" prefWidth="213.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="34.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="30 Purchase" />
+                  <String fx:value="31 Return" />
+                  <String fx:value="32 Reversal" />
+                  <String fx:value="33 Cashback" />
+                  <String fx:value="34 Authorisation" />
+                  <String fx:value="35 Capture" />
+                  <String fx:value="36 Balance" />
+                  <String fx:value="37 Add Tips" />
+                  <String fx:value="38 Deposit" />
+                  <String fx:value="39 Cash out" />
+                  <String fx:value="3B Topup" />
+                  <String fx:value="3C TopupReversal" />
+                  <String fx:value="3D TopupCorrection" />
+                  <String fx:value="40 Force Offline" />
+                  <String fx:value="41 Incr PRE Auth" />
+                  <String fx:value="42 Reversal PRE Auth" />
+                  <String fx:value="43 SaleComp PRE Auth" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <TextField fx:id="amount1Txt" prefHeight="25.0" prefWidth="84.0" text="1200" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="34.0" />
+            <Label fx:id="type2lbl" prefHeight="21.0" text="Type 2" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="60.0" />
+            <Label fx:id="amount2lbl" prefHeight="21.0" text="Amount 2" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="60.0" />
+            <ComboBox fx:id="type2Combo" prefHeight="21.0" prefWidth="214.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="84.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="30 Not Used" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <TextField fx:id="amount2Txt" prefHeight="25.0" prefWidth="84.0" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="84.0" />
+            <Label fx:id="type3lbl" prefHeight="21.0" text="Type 3" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="110.0" />
+            <ComboBox fx:id="type3Combo" prefHeight="21.0" prefWidth="213.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="134.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="30 Not Used" />
+                  <String fx:value="32 VAT/Moms" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <TextField fx:id="amount3Txt" prefHeight="25.0" prefWidth="84.0" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="134.0" />
+            <Label fx:id="amount3lbl" prefHeight="21.0" text="Amount 3" AnchorPane.leftAnchor="238.0" AnchorPane.topAnchor="110.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="hostDataPane" animated="false" collapsible="false" prefHeight="91.0" prefWidth="356.0" text="Host Data" AnchorPane.leftAnchor="16.0" AnchorPane.topAnchor="262.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="59.0" prefWidth="352.0">
+          <children>
+            <TextField fx:id="hostDataTxt" prefHeight="25.0" prefWidth="309.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="0.0" />
+            <Button fx:id="trumfDataBtn" mnemonicParsing="false" onAction="#trumfDataClicked" prefHeight="21.0" prefWidth="103.0" text="Trumf Data" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="27.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane fx:id="articleDataPane" animated="false" collapsible="false" prefHeight="225.0" prefWidth="358.0" text="ArticleData" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="363.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="205.9998779296875" prefWidth="354.0">
+          <children>
+            <Label fx:id="topUplbl" prefHeight="21.0" text="Topup Details" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="3.0" />
+            <ComboBox fx:id="topUpCombo" prefHeight="21.0" prefWidth="213.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="24.0">
+              <items>
+                <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Telenor 150 _07024844146383" />
+                  <String fx:value="Telenor 300 _07024844146390" />
+                  <String fx:value="Telenor 500 _07024844146406" />
+                  <String fx:value="Netcom 150 _07021940002810" />
+                  <String fx:value="Netcom 199 _07021940003213" />
+                  <String fx:value="Netcom 229 _07021940003220" />
+                  <String fx:value="Netcom 250 _07021940003237" />
+                  <String fx:value="Netcom 300 _07021940002841" />
+                  <String fx:value="Chess 100   _07070090351002" />
+                  <String fx:value="Chess 200   _07070090352009" />
+                  <String fx:value="Lebara 100 _07090010330542" />
+                  <String fx:value="Lebara 250 _07090010330566" />
+                  <String fx:value="Lebara 500 _07090010330580" />
+                  <String fx:value="Lebara World 100 _07090010330931" />
+                  <String fx:value="Lebara World 250 _07090010330962" />
+                  <String fx:value="Lebara Norge 250 _07090010330900" />
+                  <String fx:value="Lebara Norge 100 _07090010330870" />
+                  <String fx:value="Tele2 50 _07046226000052" />
+                  <String fx:value="Tele2 100 _07046226000021" />
+                  <String fx:value="Tele2 200 _07046226000038" />
+                  <String fx:value="Tele2 400 _07046226000045" />
+                </FXCollections>
+              </items>
+            </ComboBox>
+            <Button fx:id="addBtn" mnemonicParsing="false" onAction="#addClicked" prefHeight="21.0" prefWidth="56.0" text="Add" AnchorPane.leftAnchor="266.0" AnchorPane.topAnchor="24.0" />
+            <Button fx:id="addSeparatorBtn" mnemonicParsing="false" onAction="#addSeparatorClicked" prefHeight="21.0" prefWidth="103.0" text="Add Separator" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+            <ScrollPane fx:id="topUpScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="91.0" prefViewportHeight="71.00000762939453" prefViewportWidth="305.0" prefWidth="307.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="54.0">
+              <content>
+                <TextArea fx:id="topUpTxtArea" prefHeight="85.0" prefWidth="305.0" />
+              </content>
+            </ScrollPane>
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label fx:id="optionallbl" prefHeight="21.0" prefWidth="133.0" text="Optional Data (JSON)" AnchorPane.leftAnchor="380.0" AnchorPane.topAnchor="20.0" />
+    <Button fx:id="okBtn" mnemonicParsing="false" onAction="#okClicked" prefHeight="21.0" prefWidth="75.0" text="OK" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="104.0" />
+    <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelClicked" prefHeight="21.0" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="22.0" />
+    <Label fx:id="paymentConditionlbl" prefHeight="21.0" text="Payment Condition Code" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="14.0" />
+    <TextField fx:id="paymentConditionTxt" prefWidth="356.0" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="15.0" />
+    <Label fx:id="authCodelbl" prefHeight="21.0" text="Authorization Code" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="15.0" />
+    <TextField fx:id="authCodeTxt" prefWidth="356.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="14.0" />
+    <Button fx:id="autoDCCBtn" mnemonicParsing="false" onAction="#autoDCCBtnClicked" prefHeight="21.0" prefWidth="103.0" text="Auto DCC" AnchorPane.leftAnchor="382.0" AnchorPane.topAnchor="47.0" />
+    <Button fx:id="multiterminalBtn" mnemonicParsing="false" onAction="#multiterminalBtnClicked" prefWidth="103.0" text="Multiterminal" AnchorPane.leftAnchor="508.0" AnchorPane.topAnchor="47.0" />
+    <Button fx:id="txnRefNrBtn" mnemonicParsing="false" onAction="#txnRefNrBtnClicked" prefHeight="21.0" prefWidth="103.0" text="Txn. Ref. Nr" AnchorPane.leftAnchor="633.0" AnchorPane.topAnchor="47.0" />
+    <Button fx:id="allDataBtn" mnemonicParsing="false" onAction="#allDataBtnClicked" prefHeight="21.0" prefWidth="103.0" text="All Data" AnchorPane.leftAnchor="633.0" AnchorPane.topAnchor="20.0" />
+    <ScrollPane fx:id="optionalScroll" fitToHeight="true" fitToWidth="true" prefViewportHeight="200.0" prefViewportWidth="200.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="382.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="80.0">
+      <content>
+        <TextArea fx:id="optionalDataTxtArea" prefHeight="200.0" prefWidth="200.0" />
+      </content>
+    </ScrollPane>
+  </children>
+</AnchorPane>

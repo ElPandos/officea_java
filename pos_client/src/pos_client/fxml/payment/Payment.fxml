@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchMain" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="432.0" prefWidth="897.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.fxml.payment.PaymentController">
+    <children>
+        <SplitPane dividerPositions="0.5" prefHeight="638.0" prefWidth="897.0" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane maxHeight="610.0" maxWidth="350.0" minWidth="350.0" prefHeight="610.0" prefWidth="350.0">
+                    <children>
+                        <SplitPane dividerPositions="0.3972602739726027, 0.5" maxHeight="610.0" orientation="VERTICAL" prefHeight="610.0" prefWidth="350.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane maxHeight="70.0" minHeight="70.0" prefHeight="70.0">
+                                    <children>
+                                        <GridPane maxHeight="70.0" minHeight="70.0" prefHeight="70.0" prefWidth="344.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <GridPane alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KVAR ATT BETALA" textAlignment="CENTER" wrappingWidth="167.13671875" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font size="13.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Text fx:id="txtPaymentRemain" layoutX="34.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00" textAlignment="CENTER" wrappingWidth="167.13671875" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </GridPane>
+                                                <GridPane GridPane.columnIndex="2">
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="BETALT" textAlignment="CENTER" wrappingWidth="167.13671875" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font size="13.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Text fx:id="txtPaymentPayed" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00" textAlignment="CENTER" wrappingWidth="167.13671875" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                </GridPane>
+                                                <GridPane alignment="CENTER">
+                                                    <children>
+                                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="KÖPESUMMA" textAlignment="CENTER" wrappingWidth="167.13671875" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font size="13.0" />
+                                                            </font>
+                                                        </Text>
+                                                        <Text fx:id="txtPaymentPurchase" layoutX="34.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0,00" textAlignment="CENTER" wrappingWidth="167.13671875" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                                            <font>
+                                                                <Font name="System Bold" size="18.0" />
+                                                            </font>
+                                                        </Text>
+                                                    </children>
+                                                    <columnConstraints>
+                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    </columnConstraints>
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                </GridPane>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane maxHeight="60.0" minHeight="60.0" prefHeight="60.0" prefWidth="344.0">
+                                    <children>
+                                        <TextField fx:id="txtPaymentRegistered" alignment="CENTER_RIGHT" editable="false" layoutY="6.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="60.0" prefWidth="348.0" promptText="0,00" style="-fx-background-color: #bccd95;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font name="Arial" size="24.0" />
+                                            </font>
+                                            <effect>
+                                                <InnerShadow />
+                                            </effect>
+                                        </TextField>
+                                    </children>
+                                    <padding>
+                                        <Insets left="7.0" right="7.0" />
+                                    </padding>
+                                </AnchorPane>
+                                <AnchorPane maxHeight="280.0" minHeight="280.0" minWidth="0.0" prefHeight="279.0" prefWidth="348.0">
+                                    <children>
+                                        <GridPane alignment="TOP_CENTER" hgap="4.0" maxHeight="330.0" minHeight="330.0" prefHeight="330.0" prefWidth="348.0" vgap="4.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Button fx:id="btn9" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_9" styleClass="keyboard" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_3" styleClass="keyboard" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn8" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_8" styleClass="keyboard" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_5" styleClass="keyboard" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_2" styleClass="keyboard" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btnClear" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_Clear" styleClass="keyboard" text="Clear" GridPane.columnIndex="3" GridPane.rowSpan="2">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn7" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_7" styleClass="keyboard" text="7" GridPane.rowIndex="1">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_4" styleClass="keyboard" text="4" GridPane.rowIndex="2">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_1" styleClass="keyboard" text="1" GridPane.rowIndex="3">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btnDelete" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_Delete" styleClass="keyboard" text="←" GridPane.columnIndex="2">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn6" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_6" styleClass="keyboard" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_0" styleClass="keyboard" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btnComma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_Comma" styleClass="keyboard" text="," GridPane.columnIndex="1">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btn00" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_00" styleClass="keyboard" text="00" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                    <GridPane.margin>
+                                                        <Insets />
+                                                    </GridPane.margin>
+                                                </Button>
+                                                <Button fx:id="btnOk" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_Ok" styleClass="keyboard" text="OK" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="3">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </Button>
+                                                <Button fx:id="btnDash" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnButton_Dash" styleClass="keyboard" text="-">
+                                                    <font>
+                                                        <Font size="14.0" />
+                                                    </font>
+                                                </Button>
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                    <padding>
+                                        <Insets left="7.0" right="7.0" top="7.0" />
+                                    </padding>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane prefHeight="610.0" prefWidth="100.0">
+                    <children>
+                        <SplitPane dividerPositions="0.2192429022082019" orientation="VERTICAL" prefHeight="758.0" prefWidth="519.0" style="-fx-background-color: DarkSlateGray; -fx-border-width: 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane maxWidth="1.7976931348623157E308" prefHeight="193.0" prefWidth="535.0">
+                                    <children>
+                                        <TextArea fx:id="txtPaymentInfo" editable="false" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="203.0" prefWidth="535.0" promptText="DIALOG" scrollLeft="1.0" styleClass="txtPaymentInfo" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </TextArea>
+                                    </children>
+                                    <padding>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </padding>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="444.0" prefWidth="535.0">
+                                    <children>
+                                        <SplitPane dividerPositions="0.21666666666666667" orientation="VERTICAL" prefHeight="442.0" prefWidth="539.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                                <FlowPane hgap="5.0" vgap="5.0">
+                                                    <children>
+                                                        <Button fx:id="btnCash" contentDisplay="TOP" mnemonicParsing="false" onAction="#OnCash" text="Kontant">
+                                                            <font>
+                                                                <Font size="12.0" />
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../../images/Money-icon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </Button>
+                                                        <Button fx:id="btnCard" contentDisplay="TOP" mnemonicParsing="false" onAction="#OnCard" text="Kort">
+                                                            <font>
+                                                                <Font size="12.0" />
+                                                            </font>
+                                                            <graphic>
+                                                                <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../../images/Button_icons/card-icon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                        </Button>
+                                                        <Button fx:id="btnReverseLast" contentDisplay="TOP" mnemonicParsing="false" onAction="#OnReverseLast" text="Ångra Sista Transaktion">
+                                                            <graphic>
+                                                                <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../../images/Button_icons/reverse-icon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                            <font>
+                                                                <Font size="12.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button fx:id="btnCancel" contentDisplay="TOP" mnemonicParsing="false" onAction="#OnCancel" text="Avbryt">
+                                                            <graphic>
+                                                                <ImageView fitHeight="48.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../../images/Button_icons/cancel-icon.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </graphic>
+                                                            <font>
+                                                                <Font size="12.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                    <padding>
+                                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                                    </padding>
+                                                </FlowPane>
+                                                <FlowPane hgap="5.0" prefHeight="146.0" prefWidth="533.0" vgap="5.0">
+                                                    <children>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="MANUELL INMATNING - KORT" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                            <FlowPane.margin>
+                                                                <Insets />
+                                                            </FlowPane.margin>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#OnUpdate" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="UPPDATERA" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="MANUELL INMATNING - KORT" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#OnReceiptCopy" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="KVITTOKOPIA" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#OnRefundCard" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="CASE 4: Refund" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#OnOfflinePurchase" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="CASE 5: Offline" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#OnReversal" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="CASE 6: Reverse last" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Button maxHeight="60.0" maxWidth="150.0" minHeight="60.0" minWidth="150.0" mnemonicParsing="false" onAction="#OnStoreAndForward" prefHeight="60.0" prefWidth="150.0" styleClass="payment_terminal_functions" text="CASE 11: S&amp;F" textAlignment="CENTER" wrapText="true">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                    <padding>
+                                                        <Insets bottom="5.0" left="10.0" right="7.0" top="10.0" />
+                                                    </padding>
+                                                </FlowPane>
+                                            </items>
+                                        </SplitPane>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+</AnchorPane>

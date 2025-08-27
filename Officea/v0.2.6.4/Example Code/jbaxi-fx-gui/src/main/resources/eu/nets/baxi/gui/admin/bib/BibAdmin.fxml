@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="bibAdminPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="354.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.admin.bib.BibAdminController">
+  <children>
+    <TitledPane id="bibAdminPane" fx:id="bibAdminOperationPane" animated="false" collapsible="false" minWidth="163.0" prefHeight="201.0" prefWidth="163.0" text="Bib Admin Operation" AnchorPane.bottomAnchor="17.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="177.0" AnchorPane.topAnchor="17.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <RadioButton fx:id="startBibModeRadio" mnemonicParsing="false" text="Start BiB Mode" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="3.0">
+              <toggleGroup>
+                <ToggleGroup fx:id="bibToggle" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="endBibModeRadio" mnemonicParsing="false" text="End BiB Mode" toggleGroup="$bibToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="26.0" />
+            <RadioButton fx:id="cancelRadio" mnemonicParsing="false" text="Cancel" toggleGroup="$bibToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="49.0" />
+            <RadioButton fx:id="reconciliationRadio" mnemonicParsing="false" text="Reconciliation" toggleGroup="$bibToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="72.0" />
+            <RadioButton fx:id="newCustomerRadio" mnemonicParsing="false" text="New Customer" toggleGroup="$bibToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="95.0" />
+            <RadioButton fx:id="identifyCustomerRadio" mnemonicParsing="false" text="Identify Customer" toggleGroup="$bibToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="118.0" />
+            <RadioButton fx:id="endCustomerRadio" mnemonicParsing="false" text="End Customer" toggleGroup="$bibToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="141.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label fx:id="operIDlbl" text="OperID" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="29.0" />
+    <Button fx:id="okBtn" mnemonicParsing="false" onAction="#okBtnClicked" prefHeight="21.0" prefWidth="75.0" text="OK" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="97.0" />
+    <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelBtnClicked" prefHeight="21.0" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="14.0" />
+    <Label fx:id="adminCodelbl" text="Admin Code" AnchorPane.rightAnchor="64.0" AnchorPane.topAnchor="85.0" />
+    <TextField fx:id="operIDTxt" prefHeight="21.0" prefWidth="116.0" text="000000" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="46.0" />
+    <TextField fx:id="adminCodeTxt" prefHeight="21.0" prefWidth="116.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="102.0" />
+  </children>
+</AnchorPane>

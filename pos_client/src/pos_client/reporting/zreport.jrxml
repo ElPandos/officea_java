@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Z-report" pageWidth="204" pageHeight="400" columnWidth="194" leftMargin="5" rightMargin="5" topMargin="5" bottomMargin="5" uuid="7e62c1dd-5a42-4e72-8d3b-79b4c9190262">
+    <property name="ireport.zoom" value="2.3579476910000023"/>
+    <property name="ireport.x" value="0"/>
+    <property name="ireport.y" value="156"/>
+    <style name="table">
+        <box>
+            <pen lineWidth="1.0" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+        <box>
+            <pen lineWidth="0.5" lineColor="#000000"/>
+        </box>
+    </style>
+    <subDataset name="Type4" uuid="37b68e07-3eab-4c37-86aa-67182a6d4ed0">
+        <queryString language="SQL">
+			<![CDATA[SELECT
+     *
+FROM
+     "RECEIPTS" RECEIPTS
+WHERE TYPE_RECEIPT_ID='4']]>
+        </queryString>
+        <field name="RECEIPTS_ID" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="RECEIPTS_NR" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="USERS_ID" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CREATEDATE" class="java.sql.Date">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CREATETIME" class="java.sql.Time">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="MODIFYDATE" class="java.sql.Date">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="MODIFYTIME" class="java.sql.Time">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="TYPE_RECEIPT_ID" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="TOTALAMOUNT" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="MOMS1" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="MOMS2" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="MOMS3" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="MOMS4" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CASHBACK" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CASH" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CARD" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CREDIT" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CASHRESULT" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="CARDRESULT" class="java.lang.Double">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="BORDNUMBER" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="NOOFSERVICES" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="NOOFARTICLES" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+        <field name="COPYPRINTED" class="java.lang.Integer">
+            <fieldDescription><![CDATA[]]></fieldDescription>
+        </field>
+    </subDataset>
+    <parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+        <defaultValueExpression><![CDATA["C:\\JAVA\\pos_client\\test\\pos_client\\reporting\\"]]></defaultValueExpression>
+    </parameter>
+    <queryString>
+		<![CDATA[SELECT
+     *
+FROM
+     "RECEIPTS" RECEIPTS,
+     "BOUTIQUE" BOUTIQUE]]>
+    </queryString>
+    <field name="RECEIPTS_ID" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="RECEIPTS_NR" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="USERS_ID" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CREATEDATE" class="java.sql.Date">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CREATETIME" class="java.sql.Time">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="MODIFYDATE" class="java.sql.Date">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="MODIFYTIME" class="java.sql.Time">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="TYPE_RECEIPT_ID" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="TOTALAMOUNT" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="MOMS1" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="MOMS2" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="MOMS3" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="MOMS4" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CASHBACK" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CASH" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CARD" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CREDIT" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CASHRESULT" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CARDRESULT" class="java.lang.Double">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="BORDNUMBER" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="NOOFSERVICES" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="NOOFARTICLES" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="COPYPRINTED" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="BOUTIQUE_ID" class="java.lang.Integer">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="ORG_NO" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="NAME" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="ADDRESS1" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="ADDRESS2" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="POSTAL" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CITY" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="CONTACT" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="PHONE" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <field name="WEBSITE" class="java.lang.String">
+        <fieldDescription><![CDATA[]]></fieldDescription>
+    </field>
+    <variable name="CASH_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{CASH}]]></variableExpression>
+    </variable>
+    <variable name="CARD_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{CARD}]]></variableExpression>
+    </variable>
+    <variable name="CREDIT_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{CREDIT}]]></variableExpression>
+    </variable>
+    <variable name="MOMS1_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{MOMS1}]]></variableExpression>
+    </variable>
+    <variable name="MOMS1_2" class="java.lang.Double" resetType="Column" calculation="Sum">
+        <variableExpression><![CDATA[$F{MOMS1}]]></variableExpression>
+    </variable>
+    <variable name="MOMS2_1" class="java.lang.Double" resetType="Column" calculation="Sum">
+        <variableExpression><![CDATA[$F{MOMS2}]]></variableExpression>
+    </variable>
+    <variable name="MOMS3_1" class="java.lang.Double" resetType="Column" calculation="Sum">
+        <variableExpression><![CDATA[$F{MOMS3}]]></variableExpression>
+    </variable>
+    <variable name="MOMS4_1" class="java.lang.Double" resetType="Column" calculation="Sum">
+        <variableExpression><![CDATA[$F{MOMS4}]]></variableExpression>
+    </variable>
+    <variable name="TOTALAMOUNT_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{TOTALAMOUNT}]]></variableExpression>
+    </variable>
+    <variable name="TOTALAMOUNT_2" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{TOTALAMOUNT}]]></variableExpression>
+    </variable>
+    <variable name="RECEIPTS_NR_1" class="java.lang.Integer" calculation="DistinctCount">
+        <variableExpression><![CDATA[$F{RECEIPTS_NR}]]></variableExpression>
+    </variable>
+    <variable name="RECEIPTS_NR_2" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{RECEIPTS_NR}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_1" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_2" class="java.lang.Integer" calculation="DistinctCount">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_3" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_4" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_5" class="java.lang.Integer" calculation="DistinctCount">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_6" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_7" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="RECEIPTS_NR_3" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{RECEIPTS_NR}]]></variableExpression>
+    </variable>
+    <variable name="RECEIPTS_ID_1" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{RECEIPTS_ID}]]></variableExpression>
+    </variable>
+    <variable name="TYPE_RECEIPT_ID_8" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></variableExpression>
+    </variable>
+    <variable name="Receipt_type_4" class="java.lang.Integer" incrementType="Report" calculation="Sum">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID} != 4 ? 0 : 1]]></variableExpression>
+        <initialValueExpression><![CDATA[]]></initialValueExpression>
+    </variable>
+    <variable name="Receipt_type_1" class="java.lang.Integer" resetType="Group" resetGroup="Type" incrementType="Group" incrementGroup="Type" calculation="Sum">
+        <variableExpression><![CDATA[$F{TYPE_RECEIPT_ID} != 1 ? 0 : 1]]></variableExpression>
+        <initialValueExpression><![CDATA[]]></initialValueExpression>
+    </variable>
+    <variable name="SUMAmountType4" class="java.lang.Integer" calculation="Sum">
+        <variableExpression><![CDATA[$V{Receipt_type_4}]]></variableExpression>
+    </variable>
+    <variable name="SUMAmountType1" class="java.lang.Integer" calculation="Sum">
+        <variableExpression><![CDATA[$V{Receipt_type_1}]]></variableExpression>
+    </variable>
+    <variable name="CREATEDATE_1" class="java.lang.Integer" calculation="Count">
+        <variableExpression><![CDATA[$F{CREATEDATE}]]></variableExpression>
+    </variable>
+    <variable name="CASHRESULT_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{CASHRESULT}]]></variableExpression>
+    </variable>
+    <variable name="CARDRESULT_1" class="java.lang.Double" calculation="Sum">
+        <variableExpression><![CDATA[$F{CARDRESULT}]]></variableExpression>
+    </variable>
+    <group name="Type">
+        <groupExpression><![CDATA[$F{TYPE_RECEIPT_ID}]]></groupExpression>
+    </group>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="70" splitType="Stretch">
+            <staticText>
+                <reportElement x="47" y="12" width="100" height="20" uuid="b8fd2867-916a-42ea-951b-f89c1f0c605e"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Courier New" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Z-Rapport]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="47" y="32" width="100" height="20" uuid="ea0733bd-58be-4feb-bde5-3369e2c108c4"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Courier New"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{NAME}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="47" y="42" width="100" height="10" uuid="06d7945d-7e4e-44e7-b5ba-76d10e8dc733"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{ORG_NO}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="47" y="0" width="100" height="20" uuid="d130e8da-1bb8-4f23-a92c-90676190909c"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Courier New" size="8"/>
+                </textElement>
+                <text><![CDATA[DAGSAVSLUT]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band height="20" splitType="Stretch">
+            <textField pattern="dd/MM/yyyy HH.mm.ss">
+                <reportElement x="47" y="0" width="100" height="10" uuid="890e85b2-a405-4cb0-a0c6-525d3e6346d6"/>
+                <textElement textAlignment="Center">
+                    <font fontName="Courier New" size="8"/>
+                </textElement>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+        </band>
+    </pageHeader>
+    <summary>
+        <band height="207" splitType="Stretch">
+            <textField pattern="#,##0.00;-#,##0.00">
+                <reportElement x="111" y="52" width="73" height="10" uuid="00d04f01-c865-4699-b34c-32e52164276e"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{MOMS1_1}]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Column" pattern="#,##0.00;-#,##0.00">
+                <reportElement x="111" y="62" width="73" height="10" uuid="215ab015-ddf3-47bc-b246-35d888ab59e8"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{MOMS2_1}]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Column" pattern="#,##0.00;-#,##0.00">
+                <reportElement x="111" y="72" width="73" height="10" uuid="482bbd10-ae49-4615-a818-0e81acf9da83"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{MOMS3_1}]]></textFieldExpression>
+            </textField>
+            <textField evaluationTime="Column" pattern="#,##0.00;-#,##0.00">
+                <reportElement x="111" y="82" width="73" height="10" uuid="df3b08e5-c3f5-4b42-983b-a62d6817cd4c"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{MOMS4_1}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="19" y="12" width="100" height="10" uuid="2c969fce-eaa8-4159-9d45-544f28eb6b58"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Total försäljningssumma]]></text>
+            </staticText>
+            <textField pattern="#,##0.00;-#,##0.00">
+                <reportElement x="119" y="12" width="65" height="10" uuid="c3fac4fe-d1dd-4c70-85c0-7b9c6cd8fe69"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{TOTALAMOUNT_2}]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="19" y="22" width="100" height="10" uuid="259350df-fe83-4d88-a0d9-1c0b3b50c0e2"/>
+                <textElement>
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <text><![CDATA[...varav kontant]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="32" width="100" height="10" uuid="808a2b39-265f-4f89-a1e1-a41aed179078"/>
+                <textElement>
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <text><![CDATA[...varav kort]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="43" width="100" height="10" uuid="05962671-611b-4283-a1b0-de55c66e9533"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Total moms]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="52" width="100" height="10" uuid="ecdc0097-12bd-40b5-9986-5eff01393aef"/>
+                <textElement>
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <text><![CDATA[...varav (moms 0%)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="62" width="100" height="10" uuid="8058d4e6-0837-453a-80dc-ef011b16b7ff"/>
+                <textElement>
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <text><![CDATA[...varav (moms 6%)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="72" width="100" height="10" uuid="012d5267-f43e-4ca7-8999-b157c0c05436"/>
+                <textElement>
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <text><![CDATA[...varav (moms 12%)]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="82" width="100" height="10" uuid="24b9adce-1b9f-4230-bdd0-080c0b29cc70"/>
+                <textElement>
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <text><![CDATA[...varav (moms 25%)]]></text>
+            </staticText>
+            <textField pattern="#,##0.00;-#,##0.00">
+                <reportElement x="111" y="43" width="73" height="10" uuid="4608842a-5e21-46d6-a4f8-6cefcda9e8b7"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <textFieldExpression><![CDATA[new Double($V{MOMS1_2}.doubleValue() + $V{MOMS2_1}.doubleValue() + $V{MOMS3_1}.doubleValue() + $V{MOMS4_1}.doubleValue())]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="19" y="93" width="100" height="10" uuid="79763229-65d4-4458-be2a-8276693caf0e"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Grand total - retur]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="19" y="103" width="100" height="10" uuid="c3043f51-b6f8-479e-81e4-3e9b237e1ee1"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Grand total - netto]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="20" y="122" width="100" height="10" uuid="a8793c46-8e1b-47f7-827e-0adafd4aba71"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="true"/>
+                </textElement>
+                <text><![CDATA[KVITTON:]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="122" width="100" height="10" uuid="d3db2e8e-4c24-43bd-873e-70a68cf78941"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Pågående]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="142" width="100" height="10" uuid="5278c3e6-e52c-4069-8670-a9ac54a94974"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Avbrutna]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="152" width="100" height="10" uuid="92b8d7c2-1535-437a-ab97-d749b0a9f9b2"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Avslutade - Normal]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="162" width="100" height="10" uuid="fafad044-36a5-4bae-9e3c-325e814839a0"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Avslutade - Övning]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="172" width="100" height="10" uuid="57ecb0a8-7d8a-48d8-b29b-d22df7987115"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Kvittokopior]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="182" width="100" height="10" uuid="d674ceff-8d3d-4eb6-8d07-dd6c9677dbe5"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Återköp]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="84" y="192" width="100" height="10" uuid="4b8a7b7e-9c49-4679-a46e-6452d81286f0"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Notor (ProForma)]]></text>
+            </staticText>
+            <textField pattern="">
+                <reportElement x="121" y="162" width="58" height="10" uuid="bf5bfdb0-9b97-4f14-992c-83ea09837c3a"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{SUMAmountType4} + " st"]]></textFieldExpression>
+            </textField>
+            <staticText>
+                <reportElement x="84" y="132" width="100" height="10" uuid="ce28b217-8c87-479e-b013-ab69a97820b8"/>
+                <textElement>
+                    <font fontName="Courier New" size="6" isBold="false"/>
+                </textElement>
+                <text><![CDATA[Parkerade]]></text>
+            </staticText>
+            <textField>
+                <reportElement x="121" y="132" width="58" height="10" uuid="f213eb24-2d72-4efe-b7c6-7f48e974d527"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{SUMAmountType1} + " st"]]></textFieldExpression>
+            </textField>
+            <textField pattern="#,##0.00;-#,##0.00">
+                <reportElement x="123" y="22" width="61" height="10" uuid="99c3afca-3477-404b-ab42-c40253d54998"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{CASHRESULT_1}]]></textFieldExpression>
+            </textField>
+            <textField pattern="#,##0.00;-#,##0.00">
+                <reportElement x="109" y="32" width="75" height="10" uuid="b829409d-f97e-4e01-8024-c391fe6f0b9e"/>
+                <textElement textAlignment="Right">
+                    <font fontName="Courier New" size="6"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$V{CARDRESULT_1}]]></textFieldExpression>
+            </textField>
+            <line>
+                <reportElement x="19" y="202" width="165" height="1" uuid="b25a7cac-bed5-402d-a174-29faec641406"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineStyle="Dashed"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="19" y="113" width="165" height="1" uuid="ae2f0b23-036d-42d4-9b8e-f38a337a39aa"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineStyle="Dashed"/>
+                </graphicElement>
+            </line>
+            <line>
+                <reportElement x="19" y="7" width="165" height="1" uuid="c911add6-4437-46a4-ad66-f1674f380b30"/>
+                <graphicElement>
+                    <pen lineWidth="0.5" lineStyle="Dashed"/>
+                </graphicElement>
+            </line>
+        </band>
+    </summary>
+</jasperReport>

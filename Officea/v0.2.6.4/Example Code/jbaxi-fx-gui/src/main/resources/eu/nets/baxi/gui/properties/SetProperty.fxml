@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="propertyMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="363.0" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.properties.PropertyController">
+  <children>
+    <Button fx:id="okBtn" mnemonicParsing="false" onAction="#okBtnClicked" prefHeight="21.0" prefWidth="96.0" text="Set Property" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="124.0" />
+    <TextField fx:id="setPropertyTxt" prefWidth="568.0" AnchorPane.bottomAnchor="45.0" AnchorPane.leftAnchor="16.0" AnchorPane.rightAnchor="16.0" />
+    <TitledPane fx:id="writePropertiesPane" animated="false" collapsible="false" prefHeight="264.0" prefWidth="572.0" text="Write properties" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="21.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="568.0">
+          <children>
+            <RadioButton fx:id="logFilePrefixRadio" mnemonicParsing="false" text="LogFilePrefix" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+              <toggleGroup>
+                <ToggleGroup fx:id="propertiesToggle" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="logFilePathRadio" mnemonicParsing="false" text="LogFilePath" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="38.0" />
+            <RadioButton fx:id="traceLevelRadio" mnemonicParsing="false" text="TraceLevel" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="61.0" />
+            <RadioButton fx:id="serialDriverRadio" mnemonicParsing="false" text="SerialDriver" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="85.0" />
+            <RadioButton fx:id="baudRateRadio" mnemonicParsing="false" text="BaudRate" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="110.0" />
+            <RadioButton fx:id="comPortRadio" mnemonicParsing="false" text="ComPort" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="135.0" />
+            <RadioButton fx:id="deviceStringRadio" mnemonicParsing="false" text="DeviceString" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="160.0" />
+            <RadioButton fx:id="powerCycleCheckRadio" mnemonicParsing="false" text="PowerCycleCheck" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="185.0" />
+            <RadioButton fx:id="tidSupervisionRadio" mnemonicParsing="false" text="TidSupervision" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="210.0" />
+            <RadioButton fx:id="hostPortRadio" mnemonicParsing="false" text="HostPort" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="14.0" />
+            <RadioButton fx:id="hostIpAddressRadio" mnemonicParsing="false" text="HostIpAddress" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="38.0" />
+            <RadioButton fx:id="vendorInfoExtendedRadio" mnemonicParsing="false" text="VersionInfoExtended" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="61.0" />
+            <RadioButton fx:id="cutterSupportRadio" mnemonicParsing="false" text="CutterSupport" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="85.0" />
+            <RadioButton fx:id="useSplitDisplayTextRadio" mnemonicParsing="false" text="UseSplitDisplayText" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="111.0" />
+            <RadioButton fx:id="indicateEotTransactionRadio" mnemonicParsing="false" text="IndicateEotTransaction" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="135.0" />
+            <RadioButton fx:id="autoGetCustomerInfoRadio" mnemonicParsing="false" text="AutoGetCustomerInfo" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="160.0" />
+            <RadioButton fx:id="terminalReadyRadio" mnemonicParsing="false" text="TerminalReady" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="185.0" />
+            <RadioButton fx:id="useDisplayTextIDRadio" mnemonicParsing="false" text="UseDisplayTextID" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="143.0" AnchorPane.topAnchor="210.0" />
+            <RadioButton fx:id="socketListenerPortRadio" mnemonicParsing="false" text="SocketListenerPort" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="292.0" AnchorPane.topAnchor="85.0" />
+            <RadioButton fx:id="useExtendedLocalModeRadio" mnemonicParsing="false" text="UseExtendedLocalMode" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="292.0" AnchorPane.topAnchor="14.0" />
+            <RadioButton fx:id="cardInfoAllRadio" mnemonicParsing="false" text="CardInfoAll" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="292.0" AnchorPane.topAnchor="38.0" />
+            <RadioButton fx:id="socketListenerRadio" mnemonicParsing="false" text="SocketListener" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="292.0" AnchorPane.topAnchor="61.0" />
+            <RadioButton fx:id="logAutoDeleteDaysRadio" mnemonicParsing="false" text="LogAutoDeleteDays" toggleGroup="$propertiesToggle" AnchorPane.leftAnchor="292.0" AnchorPane.topAnchor="110.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Button fx:id="cancelBtn" cancelButton="true" mnemonicParsing="false" onAction="#cancelBtnClicked" prefHeight="21.0" prefWidth="96.0" text="Cancel" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="16.0" />
+  </children>
+</AnchorPane>

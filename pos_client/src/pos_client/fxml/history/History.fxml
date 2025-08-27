@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="820.0" style="-fx-background-color: #092b4c;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.fxml.history.HistoryController">
+    <children>
+        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="600.0" prefWidth="820.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <TitledPane alignment="CENTER" animated="false" collapsible="false" contentDisplay="CENTER" prefHeight="400.0" prefWidth="600.0" text="FÖRSÄLJNINGSHISTORIK" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <SplitPane dividerPositions="0.4982517482517482, 0.5" layoutX="99.0" layoutY="51.0" prefHeight="368.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <items>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                    <children>
+                                                        <TableView fx:id="tblHisoryReceipts" layoutX="33.0" layoutY="46.0" prefHeight="342.0" prefWidth="281.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="ColHistoryReceiptNr" prefWidth="75.0" text="Column X" />
+                                                                <TableColumn fx:id="ColHistoryReceiptTimeStamp" prefWidth="217.0" text="C1" />
+                                                                <TableColumn fx:id="ColHistoryReceiptTotal" prefWidth="88.0" text="C2" />
+                                                            </columns>
+                                                        </TableView>
+                                                    </children>
+                                                </AnchorPane>
+                                                <AnchorPane maxWidth="10.0" minWidth="10.0" prefHeight="200.0" prefWidth="10.0" />
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                                    <children>
+                                                        <TableView fx:id="tblHistoryReceiptsArticles" layoutX="29.0" layoutY="38.0" prefHeight="342.0" prefWidth="283.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <columns>
+                                                                <TableColumn fx:id="ColHistoryReceiptArticleName" prefWidth="296.0" text="C1" />
+                                                                <TableColumn fx:id="colHistoryReceiptArticlePrice" prefWidth="70.0" text="C2" />
+                                                            </columns>
+                                                        </TableView>
+                                                    </children>
+                                                </AnchorPane>
+                                            </items>
+                                        </SplitPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </TitledPane>
+                    </children>
+                </AnchorPane>
+                <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="80.0" minHeight="80.0" prefHeight="80.0">
+                    <children>
+                        <Button fx:id="btnHistoryCancel" maxHeight="80.0" maxWidth="80.0" minHeight="80.0" minWidth="80.0" mnemonicParsing="false" onAction="#OnBtnCancel" text="AVBRYT" />
+                    </children>
+                </FlowPane>
+            </items>
+        </SplitPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>

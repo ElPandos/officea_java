@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" fx:controller="pos_client.settings.SettingsEmployeesController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml">
+    <children>
+        <SplitPane dividerPositions="0.6198704103671706" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0">
+                    <children>
+                        <TableView fx:id="tblEmployees" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="942.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columns>
+                                <TableColumn fx:id="colEmployees_id" prefWidth="52.0" text="Id" />
+                                <TableColumn fx:id="colEmployees_firstname" prefWidth="99.0" text="Förnamn" />
+                                <TableColumn fx:id="colEmployees_lastname" minWidth="0.0" prefWidth="120.0" text="Efternamn" />
+                                <TableColumn fx:id="colEmployees_address" minWidth="0.0" prefWidth="126.0" text="Adress" />
+                                <TableColumn fx:id="colEmployees_postalcode" minWidth="0.0" prefWidth="66.0" text="Postkod" />
+                                <TableColumn fx:id="colEmployees_city" minWidth="0.0" prefWidth="85.0" text="Stad" />
+                                <TableColumn fx:id="colEmployees_phone" maxWidth="288.0" minWidth="0.0" prefWidth="97.0" text="Telefon hem" />
+                                <TableColumn fx:id="colEmployees_mobile" maxWidth="288.0" minWidth="0.0" prefWidth="105.0" text="Telefon mobil" />
+                                <TableColumn fx:id="colEmployees_email" maxWidth="288.0" minWidth="0.0" prefWidth="95.0" text="Epost" />
+                                <TableColumn fx:id="colEmployees_gender" prefWidth="75.0" text="Kön" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </AnchorPane>
+                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="270.0" minHeight="270.0" minWidth="270.0">
+                    <children>
+                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="270.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <TextField fx:id="txtEmployees_firstname" promptText="Förnamn" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                <TextField fx:id="txtEmployees_address" promptText="Adress" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                <TextField fx:id="txtEmployees_lastname" prefHeight="25.0" prefWidth="89.0" promptText="Efternamn" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                                <Button fx:id="btnEmployees_update" mnemonicParsing="false" onAction="#OnBtnEmployees_update" prefHeight="25.0" prefWidth="146.0" text="Uppdatera" GridPane.columnIndex="3" GridPane.rowIndex="12" />
+                                <Button fx:id="btnEmployees_add" mnemonicParsing="false" onAction="#OnBtnEmployees_add" prefHeight="25.0" prefWidth="124.0" text="Lägg till ny" GridPane.columnIndex="3" GridPane.rowIndex="13" />
+                                <Label text="Förnamn" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+                                <Label text="Telefon hem" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6" />
+                                <Label text="Stad" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+                                <Label text="Postadress" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+                                <Label text="Adress" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
+                                <Label text="Efternamn" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                <Label text="Telefon mobil" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7" />
+                                <TextField fx:id="txtEmployees_postalcode" layoutX="130.0" layoutY="97.0" promptText="Postadress" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                <TextField fx:id="txtEmployees_city" layoutX="130.0" layoutY="126.0" promptText="Stad" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                <TextField fx:id="txtEmployees_phone" layoutX="130.0" layoutY="155.0" promptText="Telefon hem" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                <TextField fx:id="txtEmployees_mobile" layoutX="130.0" layoutY="184.0" promptText="Telefon mobil" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                <TextField fx:id="txtEmployees_email" layoutX="130.0" layoutY="213.0" promptText="Epost" GridPane.columnIndex="3" GridPane.rowIndex="8" />
+                                <Label text="Epost" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="8" />
+                                <Label layoutX="80.0" layoutY="247.0" text="Kön" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="9" />
+                                <ComboBox fx:id="cbxEmployees_gender" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="9" />
+                                <Button fx:id="btnEmployees_delete" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnEmployees_delete" text="Ta bort" GridPane.columnIndex="3" GridPane.rowIndex="14" />
+                                <Button fx:id="btnEmployees_makeuser" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnEmployees_delete" text="Gör till användare" GridPane.columnIndex="3" GridPane.rowIndex="16" />
+                            </children>
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="130.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="180.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="80.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+    <padding>
+        <javafx.geometry.Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>

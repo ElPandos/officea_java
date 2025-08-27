@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="keyboard_back" maxHeight="231.0" maxWidth="768.0" minHeight="231.0" prefHeight="231.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.fxml.keyboard.large.KeyboardController">
+    <children>
+        <GridPane alignment="TOP_CENTER" hgap="5.0" layoutX="30.0" layoutY="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="250.0" prefWidth="1190.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                <ColumnConstraints hgrow="SOMETIMES" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Q" styleClass="keyboard" text="Q" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_W" styleClass="keyboard" text="W" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_R" styleClass="keyboard" text="R" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_T" styleClass="keyboard" text="T" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Y" styleClass="keyboard" text="Y" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_U" styleClass="keyboard" text="U" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_I" styleClass="keyboard" text="I" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_O" styleClass="keyboard" text="O" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_P" styleClass="keyboard" text="P" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Å" styleClass="keyboard" text="Å" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_A" styleClass="keyboard" text="A" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_S" styleClass="keyboard" text="S" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button layoutX="196.0" layoutY="46.0" maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_D" styleClass="keyboard" text="D" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_F" styleClass="keyboard" text="F" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_G" styleClass="keyboard" text="G" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_H" styleClass="keyboard" text="H" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_J" styleClass="keyboard" text="J" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_K" styleClass="keyboard" text="K" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_L" styleClass="keyboard" text="L" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Ö" styleClass="keyboard" text="Ö" GridPane.columnIndex="10" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Z" styleClass="keyboard" text="Z" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_X" styleClass="keyboard" text="X" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_C" styleClass="keyboard" text="C" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_V" styleClass="keyboard" text="V" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_B" styleClass="keyboard" text="B" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_N" styleClass="keyboard" text="N" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_M" styleClass="keyboard" text="M" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_1" styleClass="keyboard" text="1" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_2" styleClass="keyboard" text="2" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_3" styleClass="keyboard" text="3" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_4" styleClass="keyboard" text="4" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_5" styleClass="keyboard" text="5" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_6" styleClass="keyboard" text="6" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_7" styleClass="keyboard" text="7" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_8" styleClass="keyboard" text="8" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_9" styleClass="keyboard" text="9" GridPane.columnIndex="9" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_0" styleClass="keyboard" text="0" GridPane.columnIndex="10" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Ä" styleClass="keyboard" text="Ä" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button fx:id="clear_button" maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Clear" styleClass="keyboard" text="Rensa" GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+                <Button fx:id="delete_character_button" maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_Delete" styleClass="keyboard" text="←" GridPane.columnIndex="11" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="70.0" minWidth="70.0" mnemonicParsing="false" onAction="#OnButton_E" styleClass="keyboard" text="E" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Button>
+                <Label prefHeight="17.0" prefWidth="269.0" text="Copyright © 2015 Officea AB" textAlignment="RIGHT" textFill="WHITE" GridPane.columnIndex="10" GridPane.columnSpan="3" GridPane.halignment="RIGHT" GridPane.rowIndex="3" GridPane.valignment="BOTTOM" />
+            </children>
+        </GridPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="User">
+  <ClassDiagramComponents>
+    <Class name="User" package="pos_client" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="securityLevel" type="SecurityLevel" visibility="private"/>
+        <Field name="personId" type="int" visibility="private"/>
+        <Field name="receipt" type="Receipt" visibility="private"/>
+        <Field name="terminalHandler" type="TerminalHandler" visibility="private"/>
+        <Field name="exchange" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="TerminalHandler" name="terminlaHandler"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="SetUser" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="password"/>
+          <Argument type="SecurityLevel" name="securityLevel"/>
+          <Argument type="int" name="personId"/>
+        </Method>
+        <Method name="getCurrentReceipt" returnType="Receipt" visibility="public"/>
+        <Method name="setCurrentReceipt" returnType="void" visibility="public">
+          <Argument type="Receipt" name="receipt"/>
+        </Method>
+        <Method name="newReceipt" returnType="void" visibility="public"/>
+        <Method name="cancelReceipt" returnType="void" visibility="public"/>
+        <Method name="parkReceipt" returnType="void" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPassword" returnType="String" visibility="public"/>
+        <Method name="setPassword" returnType="void" visibility="public">
+          <Argument type="String" name="password"/>
+        </Method>
+        <Method name="getSecuritylevel" returnType="SecurityLevel" visibility="public"/>
+        <Method name="setSecuritylevel" returnType="void" visibility="public">
+          <Argument type="int" name="securityLevel"/>
+        </Method>
+        <Method name="setSecuritylevel" returnType="void" visibility="public">
+          <Argument type="SecurityLevel" name="securityLevel"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getPersonId" returnType="int" visibility="public"/>
+        <Method name="setPerson" returnType="void" visibility="public">
+          <Argument type="int" name="personId"/>
+        </Method>
+        <Method name="swapReceipt" returnType="void" visibility="public">
+          <Argument type="Receipt" name="parkedReceipt"/>
+          <Argument type="int" name="index"/>
+        </Method>
+        <Method name="getExchange" returnType="float" visibility="public"/>
+        <Method name="setExchange" returnType="void" visibility="public">
+          <Argument type="float" name="exchange"/>
+        </Method>
+        <Method name="cashboxOpen" returnType="void" visibility="public">
+          <Argument type="CashboxType" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

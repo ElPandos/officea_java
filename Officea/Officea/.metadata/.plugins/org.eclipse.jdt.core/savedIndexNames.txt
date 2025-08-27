@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\Users\Laptop\Desktop\GITBUCKET\JAVA\Officea\Officea\.metadata\.plugins\org.eclipse.jdt.core

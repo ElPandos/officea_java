@@ -1,0 +1,109 @@
+/* KLASSER */
+
+.root {
+    -fx-focus-color: gold;
+    -fx-font-size: 12px;
+
+}
+.button, .toggle-button, .choice-box {
+
+    -fx-padding: 7px 14px 7px 14px;
+    -fx-base: #30486D;
+    -fx-background: #F4F4F4;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,82.64285714285714%) 0%, derive(-fx-color,32.57142857142858%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 45.0%) 0%, derive(-fx-color, 34.0%) 50%, derive(-fx-color, 5.0%) 50.5%, derive(-fx-color, -10.0%) 100%);
+}
+
+.button, .toggle-button, .check-box .box, .radio-button .radio, .choice-box, .menu-button, .tab, .combo-box-base {
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+}
+.button:focused, .toggle-button:focused, .check-box:focused .box, .radio-button:focused .radio, .choice-box:focused, .menu-button:focused, .combo-box-base:focused {
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+}
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+.list-cell:empty {
+    -fx-background-color: white;
+}
+.text-field {
+    -fx-border-radius: 0 0 0 0;
+    -fx-background-radius: 0 0 0 0;
+}
+
+.text-field:focused {
+    -fx-border-color: #ff6633;
+    -fx-border-width: 2;
+    -fx-prompt-text-fill: #cccccc;
+}
+
+/* ID */
+
+#fixedBottom {
+    -fx-background-color: #2d3238;
+    -fx-border-width: 0px;
+}
+#logoback {
+    -fx-background-color: #2d3238;
+}
+#tabScanner .tab-label {
+    -fx-text-fill: white;
+}
+#tabScanner {
+    -fx-background-color: #2d3238;
+    -fx-border-width: 0 0 50 0;
+}
+
+#tabScannerAnchor{
+    -fx-background-color: #2d3238;
+}
+
+#btnNewCustomer{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0, 0 0 6 0, 0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #d86e3a, #c54e2c);
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.75) , 4,0,0,1 );
+    -fx-font-weight: bold;
+    -fx-font-size: 1.3em;
+    -fx-min-width: 45px;
+    -fx-max-width: 45px;
+}
+#btnNewCustomer:pressed {
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0, 2 0 4 0, 2 0 5 0;
+}
+#btnNewCustomer .text {
+    -fx-fill: white;
+    -fx-effect: dropshadow( gaussian , #a30000 , 0,0,0,2 );
+}
+#btnNewCustomer:hover {
+    -fx-background-color: 
+        linear-gradient(from 0% 93% to 0% 100%, #a34313 0%, #903b12 100%),
+        #9d4024,
+        #d86e3a,
+        radial-gradient(center 50% 50%, radius 100%, #ea7f4b, #c54e2c);
+}
+
+#btnUpdate{
+}
+#btnSync{
+}
+#btnRegister{
+}

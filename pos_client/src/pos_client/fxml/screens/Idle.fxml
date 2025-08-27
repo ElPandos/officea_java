@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.fxml.screens.IdleController">
+    <children>
+        <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: black;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="528.0" fitWidth="759.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/idleLogo.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </FlowPane>
+    </children>
+</AnchorPane>

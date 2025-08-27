@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.settings.SettingsReportsController">
+    <children>
+        <SplitPane dividerPositions="0.3719723183391003" prefHeight="706.0" prefWidth="1579.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane maxHeight="1.7976931348623157E308">
+                    <children>
+                        <TitledPane animated="false" collapsible="false" prefHeight="704.0" prefWidth="702.0" text="Skrivarinställningar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <content>
+                                <AnchorPane>
+                                    <children>
+                                        <GridPane hgap="5.0" layoutX="19.6" layoutY="49.6" maxWidth="1.7976931348623157E308" prefHeight="678.0" prefWidth="582.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columnConstraints>
+                                                <ColumnConstraints halignment="CENTER" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="200.0" prefWidth="333.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="89.0" minWidth="70.0" prefWidth="89.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kvittoskrivare" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Rapportskrivare (A4)" GridPane.rowIndex="1" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bongskrivare 1" GridPane.rowIndex="2" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bongskrivare 2" GridPane.rowIndex="3" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bongskrivare 3" GridPane.rowIndex="4" />
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Bongskrivare 4" GridPane.rowIndex="5" />
+                                                <ComboBox fx:id="cbxReceiptPrinter" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" />
+                                                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnReceiptPrinterTest" text="Testsida" GridPane.columnIndex="2" />
+                                                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnReportPrinterTest" text="Testsida" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnBongPrinter1Test" text="Testsida" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnBongPrinter2Test" text="Testsida" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                                                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnBongPrinter3Test" text="Testsida" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                                                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#OnBtnBongPrinter4Test" text="Testsida" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                                                <ComboBox fx:id="cbxReportPrinter" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <ComboBox fx:id="cbxBongPrinter1" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <ComboBox fx:id="cbxBongPrinter2" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <ComboBox fx:id="cbxBongPrinter3" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                <ComboBox fx:id="cbxBongPrinter4" maxWidth="1.7976931348623157E308" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                <Button mnemonicParsing="false" onAction="#OnSavePrinters" prefHeight="50.0" prefWidth="101.0" text="Spara" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                                            </children>
+                                        </GridPane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </TitledPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane>
+                    <children>
+                        <SplitPane dividerPositions="0.5" layoutY="-120.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="849.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <TitledPane alignment="TOP_LEFT" animated="false" collapsible="false" contentDisplay="TOP" prefHeight="398.0" prefWidth="501.0" text="Sparade Z-rapporter" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                                <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="321.0" prefWidth="461.0">
+                                                    <children>
+                                                        <TableView layoutX="14.0" layoutY="14.0" prefHeight="279.0" prefWidth="200.0">
+                                                            <columns>
+                                                                <TableColumn prefWidth="75.0" text="Löpnummer" />
+                                                                <TableColumn prefWidth="101.0" text="Skapad datum" />
+                                                            </columns>
+                                                        </TableView>
+                                                        <Button layoutX="219.0" layoutY="14.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="114.0" text="Skriv ut markerad" />
+                                                        <CheckBox layoutX="219.0" layoutY="50.0" mnemonicParsing="false" text="Skriv ut på kvittoskrivaren" />
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                    <children>
+                                        <TitledPane animated="false" collapsible="false" prefHeight="468.0" prefWidth="723.0" text="Journalminne" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <Text layoutX="34.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Från Datum" />
+                                                        <Text layoutX="37.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Till Datum" />
+                                                        <DatePicker layoutX="109.0" layoutY="53.0" />
+                                                        <DatePicker layoutX="109.0" layoutY="79.0" />
+                                                        <CheckBox layoutX="109.0" layoutY="114.0" mnemonicParsing="false" text="Förhandsgranska" />
+                                                        <Button layoutX="197.0" layoutY="143.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="86.0" text="Skriv ut" />
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>

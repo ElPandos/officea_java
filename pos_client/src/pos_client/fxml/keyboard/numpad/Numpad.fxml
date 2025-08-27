@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="numpad_main" maxHeight="1.7976931348623157E308" maxWidth="280.0" minHeight="173.0" minWidth="280.0" prefHeight="173.0" prefWidth="280.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="pos_client.fxml.keyboard.numpad.NumpadController"> 
+    <children>
+        <GridPane hgap="2.0" layoutX="14.0" layoutY="6.0" prefHeight="173.0" prefWidth="280.0" vgap="2.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="1" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="4" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="3" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="2" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="8" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="7" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="6" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="5" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.rowSpan="2" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="CLEAR" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="," GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" styleClass="keyboard" text="9" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                <TextField alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="---" style="-fx-background-color: #bccd95;" GridPane.columnIndex="2" GridPane.columnSpan="3">
+                    <effect>
+                        <InnerShadow blurType="GAUSSIAN" color="#686363" offsetY="4.0" />
+                    </effect>
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </TextField>
+                <ToggleButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="SEK" GridPane.columnIndex="1">
+                    <toggleGroup>
+                        <ToggleGroup fx:id="toggelgroupGGRSEK" />
+                    </toggleGroup>
+                </ToggleButton>
+                <ToggleButton maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" selected="true" text="GGR" toggleGroup="$toggelgroupGGRSEK" />
+            </children>
+        </GridPane>
+    </children>
+    <padding>
+        <Insets bottom="2.0" left="2.0" right="2.0" top="10.0" />
+    </padding>
+</AnchorPane>

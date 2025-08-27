@@ -1,0 +1,67 @@
+.root {
+    -fx-font-size: 12px;
+	-fx-base: rgb(50, 50, 50);
+    -fx-background: rgb(50, 50, 50);
+    -fx-control-inner-background:  rgb(50, 50, 50);
+	-fx-dark-gradient: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+	-fx-black-gradient: linear-gradient(to top, black, derive(-fx-base,30%));
+	-fx-highlight-color: orange;
+	-fx-focus-color: -fx-highlight-color;
+	-fx-accent: -fx-highlight-color;
+}
+
+.background {
+	-fx-background-color: -fx-dark-gradient;
+}
+
+.text-area {
+	-fx-font-family: "Courier New";
+}
+
+.menu-bar {
+	-fx-background-color: -fx-black-gradient;
+}
+
+.menu:hover {
+	-fx-background-color: -fx-highlight-color;
+}
+ 
+.tool-bar:horizontal {
+	-fx-background-color: linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+
+.button {
+	/*-fx-focus-color: -fx-highlight-color;*/
+	/*Top Right Bottom Left*/
+	-fx-label-padding: 0 5 0 5;
+	-fx-padding: 3;
+}
+ 
+.button:hover {
+	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+	-fx-color: -fx-hover-base;
+}
+ 
+ 
+.table-view {
+	-fx-table-cell-border-color:derive(-fx-base,+10%);
+	-fx-table-header-border-color:derive(-fx-base,+20%);
+}
+ 
+.split-pane:horizontal > * > .split-pane-divider {
+	-fx-border-color: transparent -fx-base transparent -fx-base;
+	-fx-background-color: transparent, derive(-fx-base,20%);
+	-fx-background-insets: 0, 0 1 0 1;
+}
+ 
+.my-gridpane {
+	-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+}
+ 
+.separator-label {
+	-fx-text-fill: -fx-highlight-color;
+}
+
+.progress-indicator {
+	-fx-progress-color: -fx-highlight-color;
+}

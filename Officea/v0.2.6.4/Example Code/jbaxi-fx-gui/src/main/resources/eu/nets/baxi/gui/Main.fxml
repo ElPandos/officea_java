@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-stylesheet BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.9998779296875" prefWidth="888.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.MainController">
+  <children>
+    <TabPane prefHeight="409.9998779296875" prefWidth="574.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="32.0">
+      <tabs>
+        <Tab fx:id="basicTab" text="Basic">
+          <content>
+            <AnchorPane id="Content" fx:id="basicPane" minHeight="0.0" minWidth="0.0" prefHeight="379.0" prefWidth="612.0">
+              <children>
+                <Button fx:id="openBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#openClicked" prefHeight="21.0" prefWidth="130.0" text="Open" textAlignment="LEFT" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="22.0" />
+                <Button fx:id="closeBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#closeClicked" prefHeight="21.0" prefWidth="130.0" text="Close" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="52.0" />
+                <Button fx:id="administration" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#administrationClicked" prefHeight="21.0" prefWidth="130.0" text="Administration" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="82.0" />
+                <Button fx:id="transferAmountBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#transferAmountClicked" prefHeight="21.0" prefWidth="130.0" text="TransferAmount" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="112.0" />
+                <Button fx:id="bibAdministrationBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#bibAdministrationClicked" prefHeight="21.0" prefWidth="130.0" text="BiB Administration" AnchorPane.leftAnchor="159.0" AnchorPane.topAnchor="82.0" />
+                <Button fx:id="bibTransactionBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#bibTransactionClicked" prefHeight="21.0" prefWidth="130.0" text="BiB Transaction" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="112.0" />
+                <Button fx:id="adminCancelBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#admCancelClicked" prefHeight="21.0" prefWidth="130.0" text="Adm Cancel" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="169.0" />
+                <Button fx:id="sendTLDBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#sendTLDClicked" prefHeight="21.0" prefWidth="130.0" text="SendTLD" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="199.0" />
+                <Button fx:id="admReadyBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#admReadyClicked" prefHeight="21.0" prefWidth="130.0" text="Adm Ready" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="229.0" />
+                <Button fx:id="getMethodRejectBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#getMethodRejectClicked" prefHeight="21.0" prefWidth="130.0" text="Get Method Reject" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="311.0" />
+                <Label fx:id="resultlbl" text="Result" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="281.0" />
+                <Label fx:id="errorCodelbl" text="ErrorCode" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="341.0" />
+                <TextField id="methodRejectTextField" fx:id="methodRejectTxt" prefWidth="200.0" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="308.0" />
+                <TextField fx:id="resultTxt" prefWidth="200.0" AnchorPane.leftAnchor="159.0" AnchorPane.topAnchor="278.0" />
+                <TextField fx:id="errorCodeTxt" prefWidth="200.0" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="338.0" />
+                <Label fx:id="terminalReadylbl" alignment="CENTER_RIGHT" text="Terminal Ready" textAlignment="RIGHT" AnchorPane.leftAnchor="415.0" AnchorPane.topAnchor="343.0" />
+                <Button fx:id="sendJSONBtn" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#sendJSONBtnClicked" prefHeight="21.0" prefWidth="130.0" text="Send JSON" AnchorPane.leftAnchor="159.0" AnchorPane.topAnchor="199.0" />
+                <Rectangle fx:id="terminalReadyRec" arcHeight="5.0" arcWidth="5.0" fill="RED" height="31.0" smooth="true" stroke="BLACK" strokeType="INSIDE" width="39.0" AnchorPane.leftAnchor="521.0" AnchorPane.topAnchor="336.0" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="developmentTab" text="Development">
+          <content>
+            <AnchorPane id="Content" fx:id="developmentPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <Button fx:id="killBaxiBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#killBaxiClicked" prefHeight="21.0" prefWidth="185.0" text="Kill Baxi Instance" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0" />
+                <Button fx:id="disposeBaxiBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#disposeBaxiClicked" prefHeight="21.0" prefWidth="185.0" text="Dispose Baxi Instance" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="44.0" />
+                <Button fx:id="newBaxiBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#newBaxiClicked" prefHeight="21.0" prefWidth="185.0" text="New Baxi Instance" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="74.0" />
+                <Button id="createSemaphoreButton" fx:id="createSemaphoreBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#createSemaphoreClicked" prefHeight="21.0" prefWidth="185.0" text="Create Semaphore" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="104.0" />
+                <Button fx:id="retainSemaphoreBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#retainSemaphoreClicked" prefHeight="21.0" prefWidth="185.0" text="Retain Semaphore" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="134.0" />
+                <Button fx:id="releaseSemaphoreBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#releaseSemaphoreClicked" prefHeight="21.0" prefWidth="185.0" text="Release Semaphore" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="164.0" />
+                <Button id="closeThenRelease" fx:id="closeThenReleaseBtn" alignment="CENTER_LEFT" contentDisplay="TOP" mnemonicParsing="false" onAction="#closeThenReleaseClicked" prefHeight="21.0" prefWidth="185.0" text="Close then release Semaphore" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="194.0" />
+                <Button fx:id="openAfterGetBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#openAfterGetClicked" prefHeight="21.0" prefWidth="185.0" text="Open after get Semaphore" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="224.0" />
+                <Button fx:id="openOpenBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#openOpenClicked" prefHeight="21.0" prefWidth="185.0" text="Open Open Cmd" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="254.0" />
+                <Button fx:id="tldTaTimeoutBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#tldTaTimeoutClicked" prefHeight="21.0" prefWidth="147.0" text="TLD-TA-Timeout" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="14.0" />
+                <Button fx:id="openCloseBtn" alignment="CENTER_LEFT" mnemonicParsing="false" onAction="#openCloseClicked" prefHeight="21.0" prefWidth="147.0" text="OpenCloseTest" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="44.0" />
+                <TitledPane id="cgiPane" fx:id="gciPane" animated="false" prefWidth="251.0" text="GCI" AnchorPane.leftAnchor="307.0" AnchorPane.topAnchor="158.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <CheckBox fx:id="gciAfterCardCheckBox" mnemonicParsing="false" text="GetCustInfo after Card Inserted" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="14.0" />
+                        <CheckBox fx:id="sendTAAfterCardCheckBox" mnemonicParsing="false" text="Send TA after GCI Response" AnchorPane.bottomAnchor="74.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="66.0" AnchorPane.topAnchor="90.0" />
+                        <Label fx:id="delaylbl1" text="Delay(ms)" AnchorPane.bottomAnchor="112.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="52.0" />
+                        <Label fx:id="delaylbl2" text="Delay(ms)" AnchorPane.bottomAnchor="36.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="128.0" />
+                        <TextField id="delay1Te" fx:id="delay1Txt" prefWidth="147.0" text="0" AnchorPane.bottomAnchor="109.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="49.0" />
+                        <TextField fx:id="delay2Txt" prefWidth="147.0" text="0" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="86.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="128.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <MenuBar fx:id="mainMenu" blendMode="OVERLAY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="8.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Properties">
+          <items>
+            <MenuItem mnemonicParsing="false" onAction="#setPropertyClicked" text="Set Property" fx:id="setPropertyMenu" />
+            <MenuItem mnemonicParsing="false" onAction="#setDefaultMenuClicked" text="Set Default Properties" fx:id="setDefaultPropertiesMenu" />
+            <MenuItem mnemonicParsing="false" onAction="#readWPropertiesMenuClicked" text="Read W properties" fx:id="readWPropertiesMMenu" />
+            <MenuItem mnemonicParsing="false" onAction="#readRPropertiesMenuClicked" text="Read R Properties" fx:id="readRPropertiesMenuClicked" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Legacy Functions" />
+      </menus>
+    </MenuBar>
+    <TitledPane fx:id="displayTextPane" animated="false" collapsible="false" prefHeight="201.0" prefWidth="288.0" text="DisplayText" AnchorPane.leftAnchor="590.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+      <content>
+        <ScrollPane id="ScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="266.9998779296875" prefViewportHeight="267.0" prefViewportWidth="284.0" prefWidth="284.0">
+          <content>
+            <TextArea id="displayTextArea" fx:id="displayTxtArea" prefHeight="216.0" prefWidth="286.0" wrapText="true" />
+          </content>
+        </ScrollPane>
+      </content>
+    </TitledPane>
+    <Button fx:id="clearDisplayBtn" mnemonicParsing="false" onAction="#clearDisplayClicked" prefHeight="21.0" prefWidth="75.0" text="Clear" AnchorPane.leftAnchor="590.0" AnchorPane.topAnchor="20.0" />
+    <TitledPane fx:id="printTextPane" animated="false" collapsible="false" prefHeight="458.0" prefWidth="286.0" text="PrintText" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="592.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="289.0">
+      <content>
+        <ScrollPane id="ScrollPane" fitToHeight="true" fitToWidth="true" prefHeight="338.9998779296875" prefViewportHeight="339.0" prefViewportWidth="282.0" prefWidth="282.0">
+          <content>
+            <TextArea id="printTextArea" fx:id="printTxtArea" minWidth="-1.0" prefHeight="336.0000999999975" prefWidth="282.0" text="" wrapText="true" />
+          </content>
+        </ScrollPane>
+      </content>
+    </TitledPane>
+    <Button id="Clear" fx:id="clearPrintBtn" layoutY="257.0" mnemonicParsing="false" onAction="#clearPrintClicked" prefHeight="21.0" prefWidth="75.0" text="Clear" AnchorPane.leftAnchor="590.0" />
+    <TitledPane fx:id="terminalResponsePane" animated="false" collapsible="false" prefHeight="176.9998779296875" prefWidth="574.0" text="Terminal Response" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="570.0">
+      <content>
+        <ScrollPane id="ScrollPane" fitToHeight="true" prefHeight="150.9998779296875" prefViewportHeight="151.0" prefViewportWidth="570.0" prefWidth="570.0">
+          <content>
+            <TextArea fx:id="localModeTxtArea" prefHeight="176.9998779296875" prefWidth="570.0" wrapText="true" />
+          </content>
+        </ScrollPane>
+      </content>
+    </TitledPane>
+    <Button fx:id="transferCardDataBtn" mnemonicParsing="false" onAction="#transferCardDataClicked" prefHeight="21.0" prefWidth="130.0" text="TransferCardData" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="482.0" />
+    <Button id="localModeClearButton" fx:id="localModeClearBtn" mnemonicParsing="false" onAction="#localModeClearClicked" prefHeight="21.0" prefWidth="75.0" text="Clear" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="543.0" />
+    <TextField id="originTextField" fx:id="originTxt" prefWidth="56.0" text="32" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="481.0" />
+    <TextField id="cardDataTextField" fx:id="cardDataTxt" prefWidth="354.0" text="9578351002001375176=1912501" AnchorPane.leftAnchor="232.0" AnchorPane.topAnchor="481.0" />
+    <Label id="originLbl" fx:id="originlbl" text="Origin" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="462.0" />
+    <Label fx:id="cardDatalbl" text="Card data excluding start sentinel, end sentinel and LRC" AnchorPane.leftAnchor="232.0" AnchorPane.topAnchor="462.0" />
+    <Button fx:id="readIssuerIdSetBtn" mnemonicParsing="false" onAction="#readIssuerIdSetBtnClicked" prefHeight="21.0" prefWidth="130.0" text="Read IssuerID Set" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="510.0" />
+    <TextField fx:id="baxiEFIssuerIDSetTxt" prefHeight="21.0" prefWidth="160.0" AnchorPane.leftAnchor="426.0" AnchorPane.topAnchor="512.0" />
+    <Label fx:id="baxiEFIssuerIDSetlbl" prefHeight="21.0" text="BaxiEF GCI IssuerID Set (Separated by ';')" AnchorPane.leftAnchor="158.0" AnchorPane.topAnchor="512.0" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,1 @@
+java -classpath .;jbaxi-gui.jar;lib/*;../../lib/windows/* eu.nets.baxi.gui.Main

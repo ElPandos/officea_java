@@ -1,0 +1,155 @@
+.root {
+    -fx-font-family: "System";
+    -fx-font-size: 13.0px;
+    -fx-base: #D0D0D0;
+    -fx-background: #F4F4F4;
+    -fx-focus-color: #0093FF;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-inner-border: linear-gradient(to bottom, derive(-fx-color,74.0%) 0%, derive(-fx-color,36.400000000000006%) 100%);
+    -fx-body-color: linear-gradient( to bottom, derive(-fx-color, 35.0%) 0%, derive(-fx-color, -6.0%) 100%);
+}
+.button, .toggle-button, .choice-box {
+    -fx-background-radius: 5, 5, 4, 3;
+    -fx-padding: 3px 10px 3px 10px;
+}
+.menu-button {
+    -fx-background-radius: 5, 5, 4, 3;
+}
+.menu-button .label {
+    -fx-padding: 3px 18px 3px 10px;
+}
+.menu-button .arrow-button {
+    -fx-padding: 3px 6px 3px 0px;
+}
+.choice-box {
+    -fx-padding: 0 6px 0 0;
+}
+.choice-box .label {
+    -fx-padding: 3px 4px 3px 6px;
+}
+.choice-box .open-button {
+    -fx-padding: 1 0 0 8px;
+}
+.combo-box-base:editable .text-field, .combo-box-base .arrow-button, .combo-box .list-cell {
+    -fx-padding: 3px 6px 3px 6px;
+}
+.check-box .box {
+    -fx-padding: 0.25em;
+}
+.radio-button .radio {
+    -fx-padding: 0.333333em;
+}
+.label, .check-box, .radio-button {
+    -fx-text-fill: -fx-text-background-color;
+}
+.button, .toggle-button, .check-box .box, .radio-button .radio, .choice-box, .menu-button, .tab, .combo-box-base {
+    -fx-background-insets: 0 0 -1 0, 0, 1, 2;
+}
+.button:focused, .toggle-button:focused, .check-box:focused .box, .radio-button:focused .radio, .choice-box:focused, .menu-button:focused, .combo-box-base:focused {
+    -fx-background-insets: -1.4, 0, 1, 2;
+}
+.combo-box-base .arrow-button {
+    -fx-background-insets: 0, 1, 2;
+}
+.choice-box .label { /* Workaround for RT-20015 */
+    -fx-text-fill: -fx-text-base-color;
+}
+.menu-button .label { /* Workaround for RT-20015 */
+    -fx-text-fill: -fx-text-base-color;
+}
+
+#emptytable {
+    -fx-background-color: blue;
+    -fx-font-size: 30px;
+    -fx-background-image: url("@./images/officea-systems_medium.png");
+}
+
+#article_button {
+    -fx-min-width: 8em;
+    -fx-max-width: 16em;
+    -fx-min-height: 6em;
+    -fx-max-height: 6em;
+    -fx-background-radius: 10 0 0 0;
+    -fx-border-radius: 0 0 0 ;
+    -fx-border-size: 3;
+}
+
+#logout_button {
+    -fx-base: orange;
+    -fx-min-width: 8em;
+    -fx-max-width: 8em;
+    -fx-min-height: 6em;
+    -fx-max-height: 6em;
+}
+
+#login_button{
+
+}
+
+#parkreceipt_button{
+    -fx-background-radius: 0 0 20 0;
+    -fx-font-size: 16px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-min-height: 100px;
+    -fx-max-height: 100px;
+    -fx-border-size: 3;
+}
+
+#discount_button{
+    -fx-background-radius: 20 0 0 0;
+    -fx-font-size: 16px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-min-height: 100px;
+    -fx-max-height: 100px;
+    -fx-border-size: 3;
+}
+
+#splitreceipt_button{
+    -fx-background-radius: 0 20 0 0;
+    -fx-font-size: 16px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-min-height: 100px;
+    -fx-max-height: 100px;
+    -fx-border-size: 3;
+}
+
+#customercard_button{
+    -fx-background-radius: 0 0 0 20;
+    -fx-font-size: 16px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-min-height: 100px;
+    -fx-max-height: 100px;
+    -fx-border-size: 3;
+}
+
+#payreceipt_button {
+    -fx-base: #88D080;
+    -fx-text-fill: white;
+    -fx-alignment: CENTER;
+    -fx-font-size: 20px;
+    -fx-min-width: 200px;
+    -fx-max-width: 200px;
+    -fx-min-height: 200px;
+    -fx-max-height: 200px;
+    -fx-border-size: 3;
+
+}
+
+#anchor_left{
+    -fx-min-width: 32em;
+}
+#tblCurrentReceipt
+{
+    -fx-font-family: "Courier New";
+    -fx-font-size: 20px;	
+    -fx-control-inner-background: white;
+    -fx-control-inner-background: white;
+    -fx-accent: derive(-fx-control-inner-background, -40%);
+    -fx-cell-hover-color: derive(-fx-control-inner-background, 100%);
+}
+.table-row-cell:empty { -fx-background-color: cornsilk; }
+.table-row-cell:empty .table-cell { -fx-border-width: 0px; }

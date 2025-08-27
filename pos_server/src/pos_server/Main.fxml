@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Main" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_server.MainController">
+    <children>
+      <TabPane prefHeight="525.0" prefWidth="494.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Log">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="496.0" prefWidth="544.0">
+                     <children>
+                        <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="30.0" prefHeight="417.0" prefWidth="472.0" text="Logger">
+                           <content>
+                              <TextArea fx:id="PrintLogger" prefHeight="410.0" prefWidth="398.0" />
+                           </content>
+                        </TitledPane>
+                          <Button fx:id="Connect" layoutX="277.0" layoutY="454.0" onAction="#Connect_handleButtonAction" prefHeight="32.0" prefWidth="95.0" text="Connect" />
+                        <Button fx:id="Disconnect" layoutX="385.0" layoutY="454.0" mnemonicParsing="false" onAction="#Disconnect_handleButtonAction" prefHeight="32.0" prefWidth="95.0" text="Disconnect" />
+                        <Rectangle fx:id="Connected_color" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="29.0" layoutX="14.0" layoutY="456.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+                        <Text fx:id="StatusText" layoutX="51.0" layoutY="475.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="211.13671875" />
+                        <Button fx:id="Clear_Log" layoutX="209.0" layoutY="454.0" mnemonicParsing="false" onAction="#Clear_Log_handleButtonAction" prefHeight="32.0" prefWidth="41.0" text="CLS" />
+                        <ProgressBar fx:id="Thread_progress" layoutX="80.0" layoutY="5.0" prefHeight="18.0" prefWidth="405.0" progress="0.0" />
+                        <Text layoutX="17.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Poll thread:" wrappingWidth="67.13671875" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Settings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane prefHeight="497.0" prefWidth="494.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Core">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Text layoutX="17.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Input:" />
+                                          <TextField fx:id="input_file" layoutX="74.0" layoutY="397.0" prefHeight="25.0" prefWidth="348.0" promptText="Communication_file" text="transfer.txt" />
+                                          <Button layoutX="429.0" layoutY="397.0" mnemonicParsing="false" onAction="#CreateInput_handleButtonAction" prefHeight="20.0" prefWidth="51.0" text="Create" />
+                                          <Text layoutX="18.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data:" wrappingWidth="44.029296875" />
+                                          <TextField fx:id="Communication_data" layoutX="74.0" layoutY="429.0" prefHeight="25.0" prefWidth="348.0" text="2;200;300" />
+                                          <Button fx:id="Conf" layoutX="430.0" layoutY="297.0" mnemonicParsing="false" onAction="#Conf_handleButtonAction" prefHeight="25.0" prefWidth="50.0" text="Conf." />
+                                          <Text layoutX="17.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Output:" />
+                                          <TextField fx:id="output_file" layoutX="74.0" layoutY="364.0" prefHeight="25.0" prefWidth="348.0" text="result.txt" />
+                                          <Button layoutX="429.0" layoutY="364.0" mnemonicParsing="false" onAction="#CreateOutput_handleButtonAction" text="Create" />
+                                          <Button layoutX="430.0" layoutY="429.0" mnemonicParsing="false" onAction="#SaveInput_handleButtonAction" prefHeight="25.0" prefWidth="50.0" text="Save" />
+                                          <TextField fx:id="status_file" layoutX="74.0" layoutY="330.0" prefHeight="25.0" prefWidth="348.0" text="status.txt" />
+                                          <Text layoutX="17.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" wrappingWidth="46.13671875" />
+                                          <TextField fx:id="source" layoutX="74.0" layoutY="297.0" prefHeight="25.0" prefWidth="348.0" text="C:\pos_com\" />
+                                          <Text layoutX="18.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Source:" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="JBaxi">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>

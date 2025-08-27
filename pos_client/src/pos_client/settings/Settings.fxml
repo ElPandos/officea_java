@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="768.0" maxWidth="1.7976931348623157E308" minHeight="768.0" minWidth="1200.0" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.settings.SettingsController">
+    <children>
+        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="775.0" minWidth="1200.0">
+            <children>
+                <TabPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" style="-fx-tab-min-height: 4em; -fx-tab-min-width: 6em;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                        <Tab fx:id="tabEmployees" onSelectionChanged="#OnActivated" text="Anställda">
+                            <content>
+                                <fx:include fx:id="settingsEmployees" source="SettingsEmployees.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabUsers" onSelectionChanged="#OnActivated" text="Användare">
+                            <content>
+                                <fx:include fx:id="settingsUser" source="SettingsUser.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabCategories" onSelectionChanged="#OnActivated" text="Kategorisering">
+                            <content>
+                                <fx:include fx:id="settingsCategories" source="SettingsCategories.fxml" />
+                            </content>
+                        </Tab>                        
+                        <Tab fx:id="tabIngredients" onSelectionChanged="#OnActivated" text="Ingredienser">
+                            <content>
+                                <fx:include fx:id="settingsIngredience" source="SettingsIngredience.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabArticles" onSelectionChanged="#OnActivated" text="Artiklar">
+                            <content>
+                                <fx:include fx:id="settingsArticle" source="SettingsArticle.fxml" /> 
+                            </content>
+                        </Tab>                       
+                        <Tab fx:id="tabSpecials" onSelectionChanged="#OnActivated" text="Special">
+                            <content>
+                                <fx:include fx:id="settingsSpecial" source="SettingsSpecial.fxml" /> 
+                            </content>
+                        </Tab>			
+                        <Tab fx:id="tabReportsPrinters" onSelectionChanged="#OnActivated" text="Kvitto, Rapporter och Skrivare">
+                            <content>
+                                <fx:include fx:id="settingsReports" source="SettingsReports.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabReceiptInfo" onSelectionChanged="#OnActivated" text="Kvittouppgifter">
+                            <content>
+                                <fx:include fx:id="settingsReceiptExtras" source="SettingsReceiptExtras.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabCurrency" onSelectionChanged="#OnActivated" text="Valuta">
+                            <content>
+                                <fx:include fx:id="settingsCurrency" source="SettingsCurrency.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabOther" onSelectionChanged="#OnActivated" text="Övrigt">
+                            <content>
+                                <fx:include fx:id="settingsOther" source="SettingsOther.fxml" /> 
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabDatabase" onSelectionChanged="#OnActivated" text="Databas">
+                            <content>
+                                <fx:include fx:id="settingsDatabaseDefaults" source="SettingsDatabaseDefaults.fxml" />
+                            </content>
+                        </Tab>
+                        <Tab fx:id="tabUnitIntegration" onSelectionChanged="#OnActivated" text="Integration">
+                            <content>
+                                <fx:include fx:id="settingsIntegration" source="SettingsIntegration.fxml" />
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </AnchorPane>
+    </children>
+</VBox>

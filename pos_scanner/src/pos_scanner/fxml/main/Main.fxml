@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="942.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_scanner.fxml.main.MainController">
+   <children>
+      <SplitPane dividerPositions="0.9328277356446371" orientation="VERTICAL" prefHeight="925.0" prefWidth="1212.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+            <AnchorPane prefHeight="925.0" prefWidth="1212.0">
+               <children>
+                  <TabPane prefHeight="400.0" prefWidth="600.0" style="-fx-tab-min-height: 60px; -fx-tab-min-width: 60px;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <tabs>
+                      <Tab fx:id="tabScanner" onSelectionChanged="#OnTabScanner" text="Scanner">
+                           <content>
+                              <AnchorPane fx:id="tabScannerAnchor" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <GridPane alignment="BASELINE_CENTER" hgap="10.0" prefHeight="491.0" prefWidth="1258.0" vgap="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <columnConstraints>
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" prefWidth="300.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="300.0" />
+                                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="300.0" minWidth="300.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                          <RowConstraints maxHeight="140.0" minHeight="140.0" prefHeight="140.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="100.0" minHeight="100.0" prefHeight="100.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="60.0" minHeight="60.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <FlowPane fx:id="flowpaneNewCustomer" hgap="5.0" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="6">
+                                             <children>
+                                                <Button fx:id="btnNewCustomer" mnemonicParsing="false" onAction="#OnBtnNewCustomer" text="+" />
+                                                <Label fx:id="lblNykund" text="Ny kund:" textFill="#ff6b0f" />
+                                                <TextField fx:id="txtCardFront" onAction="#OnFocusNext" prefHeight="31.0" prefWidth="120.0" promptText="kortnummer" />
+                                                <TextField fx:id="txtForeNameFront" onAction="#OnQuickRegister" prefHeight="31.0" prefWidth="130.0" promptText="förnamn" />
+                                             </children>
+                                          </FlowPane>
+                                          <HBox fx:id="logoback" alignment="TOP_CENTER" prefHeight="624.0" prefWidth="702.0" GridPane.columnSpan="3" GridPane.valignment="TOP">
+                                             <children>
+                                                <FlowPane alignment="CENTER" columnHalignment="CENTER" maxHeight="140.0" minHeight="140.0" prefHeight="140.0" prefWidth="200.0">
+                                                   <children>
+                                                      <ImageView fitHeight="132.0" fitWidth="348.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@../../images/logoKebabhuset.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </FlowPane>
+                                             </children>
+                                          </HBox>
+                                          <TextField fx:id="txtScannedNr" alignment="CENTER" onAction="#OnScannedNr" prefHeight="79.0" prefWidth="300.0" promptText="SCANNA HÄR" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                             <font>
+                                                <Font size="18.0" />
+                                             </font>
+                                          </TextField>
+                                          <Label fx:id="lblCount" alignment="CENTER" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="560.0" text="0" textFill="#65aea2" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.rowSpan="2" GridPane.valignment="TOP">
+                                             <font>
+                                                <Font size="75.0" />
+                                             </font>
+                                          </Label>
+                                          <TableView fx:id="tblCurrentCustomer" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" GridPane.rowSpan="5">
+                                            <columns>
+                                              <TableColumn fx:id="colCurrentCustomerDate" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" text="Datum" />
+                                              <TableColumn fx:id="colCurrentCustomerTime" maxWidth="130.0" minWidth="130.0" prefWidth="130.0" text="Tid" />
+                                                <TableColumn fx:id="colTimeSinceToday" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" text="Sedan" />
+                                            </columns>
+                                          </TableView>
+                                          <Label fx:id="lblCountToday" alignment="CENTER" prefHeight="261.0" prefWidth="408.0" text="0" textFill="#4480c9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="44.0" />
+                                             </font>
+                                          </Label>
+                                          <Label alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="183.0" prefWidth="390.0" text="KUNDER IDAG" textFill="#4480c9" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="TOP">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblScannedCard" alignment="TOP_CENTER" contentDisplay="TOP" prefHeight="35.0" prefWidth="383.0" text=" Inget kort scannat" textFill="#d76437" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="TOP">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblCountCustomerTotal" alignment="CENTER" text="Totalt besök: 0" textFill="#d76437" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="TOP">
+                                             <font>
+                                                <Font name="System Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblScannedUser" text="-" textAlignment="CENTER" textFill="#d76437" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblMessage" alignment="CENTER" maxHeight="140.0" minHeight="140.0" prefHeight="228.0" prefWidth="348.0" textAlignment="CENTER" textFill="#65aea2" wrapText="true" GridPane.valignment="BOTTOM">
+                                             <font>
+                                                <Font size="24.0" />
+                                             </font>
+                                             <padding>
+                                                <Insets top="80.0" />
+                                             </padding>
+                                          </Label>
+                                          <ImageView fx:id="imgSnabbregistrering" fitHeight="48.0" fitWidth="185.0" pickOnBounds="true" preserveRatio="true" translateY="-30.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7" GridPane.valignment="TOP">
+                                             <image>
+                                                <Image url="@../../images/snabbregistrering.png" />
+                                             </image>
+                                             <GridPane.margin>
+                                                <Insets />
+                                             </GridPane.margin>
+                                          </ImageView>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </AnchorPane>
+                           </content>
+                      </Tab>
+                      <Tab fx:id="tabCustomers" onSelectionChanged="#OnTabCustomers" text="Kunder">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <SplitPane dividerPositions="0.1340782122905028, 0.6797020484171322, 0.5" layoutX="217.0" layoutY="88.0" orientation="VERTICAL" prefHeight="559.0" prefWidth="1210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                          <HBox alignment="CENTER_LEFT" maxHeight="100.0" minHeight="100.0" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                                             <children>
+                                                <TextField fx:id="txtSearch" onKeyReleased="#OnReleasedTxtSearch" prefHeight="31.0" prefWidth="353.0" promptText="Sök här..." />
+                                                <Label text="Antal Träffar:">
+                                                   <font>
+                                                      <Font size="15.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="lblCountCustomers" prefHeight="21.0" prefWidth="55.0" text="Label">
+                                                   <font>
+                                                      <Font name="System Bold" size="15.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                             <padding>
+                                                <Insets left="10.0" />
+                                             </padding>
+                                          </HBox>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                             <children>
+                                                <TableView fx:id="tblCustomers" layoutX="106.0" layoutY="33.0" maxWidth="1.7976931348623157E308" prefHeight="554.0" prefWidth="765.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <columns>
+                                                    <TableColumn fx:id="colCard" prefWidth="117.0" text="Kundnummer" />
+                                                    <TableColumn fx:id="colForeName" minWidth="7.0" prefWidth="131.0" text="Förnamn" />
+                                                      <TableColumn fx:id="colSurName" prefWidth="147.0" text="Efternamn" />
+                                                      <TableColumn fx:id="colEmail" minWidth="1.0" prefWidth="171.0" text="E-post" />
+                                                      <TableColumn fx:id="colPhone" minWidth="1.0" prefWidth="110.0" text="Telefon" />
+                                                      <TableColumn minWidth="1.0" prefWidth="215.0" text="Föredrar att kontaktas via">
+                                                         <columns>
+                                                            <TableColumn fx:id="colAcceptSms" minWidth="1.0" prefWidth="92.0" text="SMS" />
+                                                            <TableColumn fx:id="colAcceptEmail" minWidth="1.0" prefWidth="100.0" text="E-Post" />
+                                                         </columns>
+                                                      </TableColumn>
+                                                      <TableColumn fx:id="colCount" minWidth="1.0" prefWidth="113.0" text="Antal Besök" />
+                                                      <TableColumn fx:id="colSync" prefWidth="75.0" text="Synk" />
+                                                  </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                          <FlowPane alignment="CENTER_LEFT" hgap="10.0" maxHeight="65.0" minHeight="65.0" prefHeight="65.0" prefWidth="996.0" vgap="10.0">
+                                             <children>
+                                                <Button fx:id="btnSendEmail" disable="true" maxHeight="50.0" minHeight="50.0" mnemonicParsing="false" onAction="#OnBtnSendEmail" text="Skicka E-mail" textFill="WHITE" />
+                                                <Button fx:id="btnSendSMS" disable="true" maxHeight="50.0" minHeight="50.0" mnemonicParsing="false" onAction="#OnBtnSendSMS" text="Skicka SMS" textFill="WHITE" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </FlowPane>
+                                          <FlowPane hgap="10.0" maxHeight="90.0" minHeight="90.0" prefHeight="90.0" prefWidth="996.0" vgap="10.0">
+                                             <children>
+                                                <Label fx:id="lblNewCustomer" />
+                                                <CheckBox fx:id="chkNewCustomer" mnemonicParsing="false" text="Ny kund" />
+                                                <TextField fx:id="txtCard" prefHeight="31.0" prefWidth="120.0" promptText="kortnummer" />
+                                                <TextField fx:id="txtForeName" prefHeight="31.0" prefWidth="130.0" promptText="förnamn" />
+                                                <TextField fx:id="txtSurName" prefHeight="31.0" prefWidth="140.0" promptText="efternamn" />
+                                                <TextField fx:id="txtEmail" prefHeight="31.0" prefWidth="159.0" promptText="e-post" />
+                                                <TextField fx:id="txtPhone" prefHeight="31.0" prefWidth="130.0" promptText="telefon" />
+                                                <CheckBox fx:id="chkSMS" mnemonicParsing="false" text="SMS" />
+                                                <CheckBox fx:id="chkEmail" mnemonicParsing="false" text="E-post" />
+                                                <Button fx:id="btnUpdate" mnemonicParsing="false" onAction="#OnBtnUpdate" prefHeight="31.0" prefWidth="142.0" text="Uppdatera" />
+                                                <Button fx:id="btnSync" mnemonicParsing="false" onAction="#OnBtnSyncronize" text="Synk" />
+                                                <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#OnRegisterSystem" text="Register" />
+                                             </children>
+                                             <padding>
+                                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                             </padding>
+                                          </FlowPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                        <Tab fx:id="tabStatistics" onSelectionChanged="#OnTabLoadCharts" text="Statistik">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <SplitPane dividerPositions="0.3148148148148148" prefHeight="784.0" prefWidth="1210.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                      <items>
+                                        <AnchorPane maxWidth="370.0" minHeight="0.0" minWidth="370.0" prefHeight="160.0" prefWidth="370.0">
+                                             <children>
+                                              <TitledPane animated="false" collapsible="false" contentDisplay="CENTER" maxHeight="229.0" maxWidth="330.0" minHeight="229.0" minWidth="330.0" prefHeight="762.0" prefWidth="350.0" text="Topplista Kunder" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                <content>
+                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <SplitPane dividerPositions="0.13983050847457626" orientation="VERTICAL" prefHeight="197.0" prefWidth="328.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                  <FlowPane alignment="CENTER_LEFT" maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="200.0">
+                                                                     <children>
+                                                                        <Label text="Från:">
+                                                                           <padding>
+                                                                              <Insets left="5.0" right="5.0" />
+                                                                           </padding></Label>
+                                                                        <DatePicker fx:id="dateStatisticStart" onAction="#OnDateStatisticStart" prefHeight="31.0" prefWidth="139.0" promptText="Startdatum" />
+                                                                        <Label text="Till:">
+                                                                           <padding>
+                                                                              <Insets left="10.0" right="5.0" />
+                                                                           </padding></Label>
+                                                                        <DatePicker fx:id="dateStatisticEnd" nodeOrientation="LEFT_TO_RIGHT" onAction="#OnDateStatisticEnd" prefHeight="31.0" prefWidth="139.0" promptText="Slutdatum" />
+                                                                     </children>
+                                                                     <padding>
+                                                                        <Insets left="3.0" />
+                                                                     </padding>
+                                                                  </FlowPane>
+                                                                <AnchorPane>
+                                                                     <children>
+                                                                        <TableView fx:id="tblCustomerTopList" prefHeight="193.0" prefWidth="326.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                          <columns>
+                                                                            <TableColumn fx:id="colTopListName" prefWidth="154.0" text="Namn" />
+                                                                            <TableColumn fx:id="colTopListNumber" prefWidth="120.0" text="Nummer" />
+                                                                              <TableColumn fx:id="colTopListCount" minWidth="8.0" prefWidth="67.0" text="Antal" />
+                                                                          </columns>
+                                                                        </TableView>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets top="-1.0" />
+                                                         </padding>
+                                                      </AnchorPane>
+                                                </content>
+                                              </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                             <children>
+                                                <TitledPane animated="false" collapsible="false" prefHeight="602.0" prefWidth="618.0" text="Statistik" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane>
+                                                         <children>
+                                                            <SplitPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" orientation="VERTICAL" prefHeight="747.0" prefWidth="946.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                              <items>
+                                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                                                     <children>
+                                                                        <VBox prefHeight="698.0" prefWidth="943.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                           <children>
+                                                                              <BarChart fx:id="chrtYear" animated="false" title="År">
+                                                                                <xAxis>
+                                                                                  <CategoryAxis side="BOTTOM" />
+                                                                                </xAxis>
+                                                                                <yAxis>
+                                                                                  <NumberAxis label="Antal kunder" side="LEFT" />
+                                                                                </yAxis>
+                                                                              </BarChart>
+                                                                              <LineChart fx:id="chrtMonth" animated="false" title="Månad">
+                                                                                <xAxis>
+                                                                                  <CategoryAxis side="BOTTOM" />
+                                                                                </xAxis>
+                                                                                <yAxis>
+                                                                                  <NumberAxis label="Antal kunder" side="LEFT" />
+                                                                                </yAxis>
+                                                                              </LineChart>
+                                                                              <LineChart fx:id="chrtWeek" animated="false" title="Vecka">
+                                                                                <xAxis>
+                                                                                  <CategoryAxis prefHeight="30.0" prefWidth="471.0" side="BOTTOM" />
+                                                                                </xAxis>
+                                                                                <yAxis>
+                                                                                  <NumberAxis label="Antal kunder" side="LEFT" />
+                                                                                </yAxis>
+                                                                              </LineChart>
+                                                                           </children>
+                                                                        </VBox>
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                              </items>
+                                                            </SplitPane>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets right="1.0" />
+                                                         </padding>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                      </items>
+                                    </SplitPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </AnchorPane>
+                          </content>
+                        </Tab>
+                        <Tab disable="true" text="Inställningar">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <children>
+                                    <Label layoutX="14.0" layoutY="14.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Butik:" />
+                                    <Label layoutX="264.0" layoutY="14.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Kebabhuset" />
+                                    <Label layoutX="14.0" layoutY="92.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Butikens kortprefix:" />
+                                    <Label layoutX="264.0" layoutY="113.0" maxWidth="250.0" minWidth="60.0" prefHeight="21.0" prefWidth="60.0" text="400 st" />
+                                    <Label layoutX="264.0" layoutY="92.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="300#" />
+                                    <Label layoutX="14.0" layoutY="113.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Antal registrerade kort:" />
+                                    <Label layoutX="336.0" layoutY="113.0" maxWidth="250.0" minWidth="60.0" prefHeight="21.0" prefWidth="120.0" text="Beställ fler kort" textFill="#3183b2" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="För att beställa fler kort, vänligen ring 046 378 00 07" wrapText="true" />
+                                       </tooltip>
+                                    </Label>
+                                    <Label layoutX="14.0" layoutY="35.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Adress:" />
+                                    <Label layoutX="264.0" layoutY="35.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Kungsgatan 2" />
+                                    <Label layoutX="264.0" layoutY="56.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="223 50, Lund" />
+                                    <Label layoutX="264.0" layoutY="134.0" maxWidth="250.0" minWidth="60.0" prefHeight="21.0" prefWidth="60.0" text="1 st" />
+                                    <Label layoutX="14.0" layoutY="134.0" maxWidth="250.0" minWidth="250.0" prefWidth="250.0" text="Kopplade butiker:" />
+                                    <Label layoutX="336.0" layoutY="134.0" maxWidth="250.0" minWidth="60.0" prefHeight="21.0" prefWidth="191.0" text="Koppla fler butiker" textFill="#3183b2" underline="true">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="För att koppla fler butiker, vänligen ring 046 378 00 07" wrapText="true" />
+                                       </tooltip>
+                                    </Label>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </children>
+            </AnchorPane>
+            <FlowPane fx:id="fixedBottom" alignment="CENTER" columnHalignment="CENTER" hgap="10.0" maxHeight="60.0" minHeight="60.0" prefHeight="60.0" prefWidth="200.0">
+               <children>
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © 2017 Officea, Tel 046 378 00 07" />
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+                  <Text fx:id="txtLocalDb" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lokal DB" />
+                  <Text fx:id="txtOnlineDb" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Online DB" />
+                  <Text fx:id="txtRegistered" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="Inte registrerad" />
+               </children>
+            </FlowPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

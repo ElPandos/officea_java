@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Article">
+  <ClassDiagramComponents>
+    <Class name="Article" package="pos_client" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="SimpleIntegerProperty" visibility="private"/>
+        <Field name="layoutIndex" type="SimpleIntegerProperty" visibility="private"/>
+        <Field name="name" type="SimpleStringProperty" visibility="private"/>
+        <Field name="purchase" type="SimpleFloatProperty" visibility="private"/>
+        <Field name="price_incm" type="SimpleFloatProperty" visibility="private"/>
+        <Field name="price_excm" type="SimpleFloatProperty" visibility="private"/>
+        <Field name="moms_id" type="SimpleIntegerProperty" visibility="private"/>
+        <Field name="barcode" type="SimpleStringProperty" visibility="private"/>
+        <Field name="articleTabId" type="SimpleIntegerProperty" visibility="private"/>
+        <Field name="articleTypeId" type="SimpleIntegerProperty" visibility="private"/>
+        <Field name="description" type="SimpleStringProperty" visibility="private"/>
+        <Field name="image_url" type="SimpleStringProperty" visibility="private"/>
+        <Field name="ingrediences" type="SimpleStringProperty" visibility="private"/>
+        <Field name="discount" type="SimpleFloatProperty" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="artId"/>
+          <Argument type="int" name="artLayoutIndex"/>
+          <Argument type="String" name="artName"/>
+          <Argument type="float" name="artPurchase"/>
+          <Argument type="float" name="artPrice_incm"/>
+          <Argument type="float" name="artPrice_excm"/>
+          <Argument type="int" name="artMomsId"/>
+          <Argument type="String" name="artBarcode"/>
+          <Argument type="int" name="articleTabId"/>
+          <Argument type="String" name="artDescription"/>
+          <Argument type="String" name="artImage_url"/>
+          <Argument type="String" name="artIngrediences"/>
+          <Argument type="int" name="articleTyepeId"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="newId"/>
+        </Method>
+        <Method name="getId" returnType="Integer" visibility="public"/>
+        <Method name="setLayoutIndex" returnType="void" visibility="public">
+          <Argument type="Integer" name="newIndex"/>
+        </Method>
+        <Method name="getLayoutIndex" returnType="Integer" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="newName"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setPurchase" returnType="void" visibility="public">
+          <Argument type="Float" name="newPurchase"/>
+        </Method>
+        <Method name="getPurchase" returnType="float" visibility="public"/>
+        <Method name="setPrice_incm" returnType="void" visibility="public">
+          <Argument type="float" name="newPrice"/>
+        </Method>
+        <Method name="getPrice_incm" returnType="double" visibility="public"/>
+        <Method name="getPrice_incm_str" returnType="String" visibility="public"/>
+        <Method name="setPrice_excm" returnType="void" visibility="public">
+          <Argument type="float" name="newPrice"/>
+        </Method>
+        <Method name="getPrice_excm" returnType="float" visibility="public"/>
+        <Method name="setMoms_id" returnType="void" visibility="public">
+          <Argument type="Integer" name="newMoms"/>
+        </Method>
+        <Method name="getMoms_id" returnType="Integer" visibility="public"/>
+        <Method name="setBarcode" returnType="void" visibility="public">
+          <Argument type="String" name="newBarcode"/>
+        </Method>
+        <Method name="getBarcode" returnType="String" visibility="public"/>
+        <Method name="getArticleTabId" returnType="Integer" visibility="public"/>
+        <Method name="setArticleTabId" returnType="void" visibility="public">
+          <Argument type="int" name="articleTabId"/>
+        </Method>
+        <Method name="getArticleTypeId" returnType="Integer" visibility="public"/>
+        <Method name="setArticleTypeId" returnType="void" visibility="public">
+          <Argument type="Integer" name="articleTypeId"/>
+        </Method>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="newDescription"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setImage_url" returnType="void" visibility="public">
+          <Argument type="String" name="newImageUrl"/>
+        </Method>
+        <Method name="getImage_url" returnType="String" visibility="public"/>
+        <Method name="calcMoms" returnType="double" visibility="public"/>
+        <Method name="addIngredience" returnType="void" visibility="public">
+          <Argument type="Ingredience" name="obj"/>
+        </Method>
+        <Method name="getIngrediences" returnType="String[]" visibility="public"/>
+        <Method name="getIngrediencesStr" returnType="String" visibility="public"/>
+        <Method name="containsIngredience" returnType="boolean" visibility="public">
+          <Argument type="Ingredience" name="ing"/>
+        </Method>
+        <Method name="getDiscount" returnType="float" visibility="package"/>
+        <Method name="getDiscountValue" returnType="float" visibility="package"/>
+        <Method name="setDiscount" returnType="void" visibility="package">
+          <Argument type="float" name="newDiscount"/>
+        </Method>
+        <Method name="getPrice" returnType="String" visibility="package"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

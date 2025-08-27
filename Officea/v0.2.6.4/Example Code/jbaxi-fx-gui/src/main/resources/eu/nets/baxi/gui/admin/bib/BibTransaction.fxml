@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../../BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="bibTransactionPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.9998779296875" prefWidth="750.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.admin.bib.BibTransactionController">
+  <children>
+    <TitledPane fx:id="methodPropertiesPane" animated="false" collapsible="false" prefHeight="344.9998779296875" prefWidth="518.0" text="Method Properties" AnchorPane.bottomAnchor="107.0" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <content>
+        <AnchorPane fx:id="methodPropertiesContent" minHeight="0.0" minWidth="0.0" prefHeight="299.0" prefWidth="514.0">
+          <children>
+            <Label fx:id="operIDlbl" text="OperID" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="18.0" />
+            <Label fx:id="amountlbl" prefWidth="48.0" text="Amount" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="48.0" />
+            <Label fx:id="sequencelbl" prefWidth="102.0" text="Sequence Number" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="78.0" />
+            <Label fx:id="accountlbl" prefWidth="102.0" text="Account No/Info1" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="107.0" />
+            <Label fx:id="buntlbl" prefWidth="102.0" text="Bunt num/Info2" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="137.0" />
+            <Label fx:id="formlbl" prefWidth="102.0" text="Form num/Info3" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="167.0" />
+            <Label fx:id="prefixlbl" prefWidth="98.0" text="Prefix/Info5" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="198.0" />
+            <Label fx:id="kidlbl" prefWidth="102.0" text="KID No/Info4" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="227.0" />
+            <Label fx:id="commissionlbl" prefWidth="98.0" text="Commission date" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="17.0" />
+            <Label fx:id="issuelbl" prefWidth="98.0" text="Issue date" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="47.0" />
+            <Label fx:id="validlbl" prefWidth="98.0" text="Valid date" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="78.0" />
+            <Label fx:id="personlbl" prefWidth="98.0" text="Person Number" AnchorPane.rightAnchor="159.0" AnchorPane.topAnchor="107.0" />
+            <TextField fx:id="operIDText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="15.0" />
+            <TextField fx:id="amountText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="45.0" />
+            <TextField fx:id="sequenceText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="76.0" />
+            <TextField fx:id="accountText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="105.0" />
+            <TextField fx:id="buntText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="135.0" />
+            <TextField fx:id="kidText" prefHeight="21.0" prefWidth="182.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="225.0" />
+            <TextField fx:id="prefixText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="195.0" />
+            <TextField fx:id="formText" prefHeight="21.0" prefWidth="102.0" AnchorPane.leftAnchor="131.0" AnchorPane.topAnchor="165.0" />
+            <TextField fx:id="commissionText" prefHeight="21.0" prefWidth="102.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="15.0" />
+            <TextField fx:id="issueText" prefHeight="21.0" prefWidth="102.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="45.0" />
+            <TextField fx:id="validText" prefHeight="21.0" prefWidth="102.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="76.0" />
+            <TextField fx:id="personText" prefHeight="21.0" prefWidth="102.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="105.0" />
+            <CheckBox fx:id="withCardCheckBox" mnemonicParsing="false" onAction="#withCardCheckBoxChanged" text="With Card" AnchorPane.rightAnchor="68.0" AnchorPane.topAnchor="134.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label fx:id="directlbl" text="Direct Transaction String" AnchorPane.bottomAnchor="78.0" AnchorPane.leftAnchor="220.0" AnchorPane.rightAnchor="399.0" />
+    <TextField fx:id="directText" prefHeight="25.0" prefWidth="518.0" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="218.0" AnchorPane.rightAnchor="14.0" />
+    <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelBtnClicked" prefHeight="21.0" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="14.0" />
+    <Button fx:id="okBtn" mnemonicParsing="false" onAction="#okBtnClicked" prefHeight="21.0" prefWidth="75.0" text="OK" AnchorPane.bottomAnchor="13.0" AnchorPane.rightAnchor="100.0" />
+    <TitledPane id="bibTransaction" fx:id="bibTransactionRadioPane" animated="false" collapsible="false" minWidth="186.0" prefHeight="420.0" prefWidth="186.0" text="Bib Transaction" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <content>
+        <AnchorPane fx:id="bibTransactionRadioContent" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+          <children>
+            <RadioButton fx:id="depositRadio" mnemonicParsing="false" prefWidth="118.0" text="Deposit" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="15.0">
+              <toggleGroup>
+                <ToggleGroup fx:id="bibTransToggle" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="deposit2Radio" mnemonicParsing="false" prefWidth="118.0" text="Deposit 2" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="45.0" />
+            <RadioButton fx:id="giroDepositRadio" mnemonicParsing="false" prefWidth="118.0" text="GiroDeposit" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="75.0" />
+            <RadioButton fx:id="currencyDepositRadio" mnemonicParsing="false" prefWidth="118.0" text="Currency Deposit" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="105.0" />
+            <RadioButton fx:id="cashWithdrawalRadio" mnemonicParsing="false" prefWidth="118.0" text="Cash withdrawal w. Credit Card" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="165.0" />
+            <RadioButton fx:id="withdrawalRadio" mnemonicParsing="false" prefWidth="118.0" text="Withdrawal" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="135.0" />
+            <RadioButton fx:id="currencyWithdrawalRadio" mnemonicParsing="false" prefWidth="118.0" text="Currency Withdrawal" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="209.0" />
+            <RadioButton fx:id="giroWithdrawalRadio" mnemonicParsing="false" prefWidth="118.0" text="Giro Withdrawal" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="253.0" />
+            <RadioButton fx:id="saldoRadio" mnemonicParsing="false" prefWidth="118.0" text="Saldo" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="283.0" />
+            <RadioButton fx:id="cashCheckRadio" mnemonicParsing="false" prefWidth="118.0" text="Cash Check" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="313.0" />
+            <RadioButton fx:id="bankCheckRadio" mnemonicParsing="false" prefWidth="118.0" text="Bank Check" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="343.0" />
+            <RadioButton fx:id="reversalRadio" mnemonicParsing="false" prefWidth="118.0" text="Reversal" toggleGroup="$bibTransToggle" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="373.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+  </children>
+</AnchorPane>

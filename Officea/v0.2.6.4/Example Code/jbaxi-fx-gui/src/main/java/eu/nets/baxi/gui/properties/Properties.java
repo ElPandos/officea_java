@@ -1,0 +1,30 @@
+package eu.nets.baxi.gui.properties;
+
+public enum Properties {
+	None,
+	LogFilePrefix,
+	LogFilePath,
+	TraceLevel,
+	BaudRate,
+	ComPort,
+	HostPort,
+	HostIpAddress,
+	VendorInfoExtended,
+	IndicateEotTransaction,
+	CutterSupport,
+	PrinterWidth,
+	DisplayWidth,
+	PowerCycleCheck,
+	TidSupervision,
+	AutoGetCustomerInfo,
+	TerminalReady,
+	UseDisplayTextID,
+	UseExtendedLocalMode,
+	UseSplitDisplayText,
+	SerialDriver,
+	DeviceString,
+	SocketListenerPort,
+	CardInfoAll,
+	LogAutoDeleteDays,
+	SocketListener
+}

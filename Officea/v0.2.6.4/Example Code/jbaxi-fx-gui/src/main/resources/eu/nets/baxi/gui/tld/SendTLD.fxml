@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?scenebuilder-stylesheet ../BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="sendTLDMainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.9998779296875" prefWidth="600.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.tld.SendTLDController">
+  <children>
+    <TabPane id="sendTLDTabPAne" fx:id="sendTLDTabPane" prefHeight="365.9998779296875" prefWidth="572.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="129.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+      <tabs>
+        <Tab fx:id="terminalInfoTab" text="TerminalInfo">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="338.9998779296875" prefWidth="572.0">
+              <children>
+                <TitledPane id="terminalInfoGruopTitledPane" fx:id="terminalInfoGroupTitledPane" animated="false" collapsible="false" minWidth="572.0" prefHeight="335.0" prefWidth="572.0" text="Terminal Info Group 10XX" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="579.0">
+                      <children>
+                        <Button fx:id="ituLanguageCodeSetBtn" mnemonicParsing="false" onAction="#ituLanguageCodeSetBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITULanguageCodeSet (1014)" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="ituStatusInfoBtn" mnemonicParsing="false" onAction="#ituStatusInfoBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITU StatusInfo (1001)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0" />
+                        <Button fx:id="ituPhysicalSerialNumberBtn" mnemonicParsing="false" onAction="#ituPhysicalSerialNumberBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITU PhysicalSerialNumber (1010)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="75.0" />
+                        <Button fx:id="ituSWVersionBtn" mnemonicParsing="false" onAction="#ituSWVersionBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITU SWVersion (1005)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="165.0" />
+                        <Button fx:id="ituTimeStampPowerOn2Btn" mnemonicParsing="false" onAction="#ituTimeStampPowerOn2BtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUTimeStampPowerOn2 (1007)" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="195.0" />
+                        <Button id="ituTimestampPowerOn1Btn" fx:id="ituTimeStampPowerOn1Btn" mnemonicParsing="false" onAction="#ituTimeStampPowerOn1BtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUTimeStampPowerOn1 (1006)" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="165.0" />
+                        <Button fx:id="ituTerminalIDBtn" mnemonicParsing="false" onAction="#ituTerminalIDBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUTerminalID (1002)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="195.0" />
+                        <Button id="itu" fx:id="ituTimeStampPowerOff1Btn" mnemonicParsing="false" onAction="#ituTimeStampPowerOff1BtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUTimeStampPowerOff1 (1008)" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="225.0" />
+                        <Button id="ituTimestampPowerOn4Btn" fx:id="ituTimeStampPowerOff2Btn" mnemonicParsing="false" onAction="#ituTimeStampPowerOff2BtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUTimeStampPowerOff2 (1009)" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="255.0" />
+                        <Button fx:id="ituProtocolVersionNumberBtn" mnemonicParsing="false" onAction="#ituProtocolVersionNumberBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITU ProtocolVersionNumber (1011)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="105.0" />
+                        <Button fx:id="ituVersionBtn" mnemonicParsing="false" onAction="#ituVersionBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITU Version (1004)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="135.0" />
+                        <Button fx:id="ituPSPConnectionStatusBtn" mnemonicParsing="false" onAction="#ituPSPConnectionStatusBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUPSPConnectionStatus (1012)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="260.0" />
+                        <Button id="ituSiteIdBtn" fx:id="ituSiteIDBtn" mnemonicParsing="false" onAction="#ituSiteIDBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUSiteID (1003)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="225.0" />
+                        <Button fx:id="itutestInfoBtn" mnemonicParsing="false" onAction="#ituTestInfoBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITU TestInfo (1000)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="ituServiceTextIDSetBtn" mnemonicParsing="false" onAction="#ituServiceTextIDSetBtnClicked" prefHeight="21.0" prefWidth="210.0" text="ITUServiceTextIDSet (1015)" AnchorPane.leftAnchor="284.0" AnchorPane.topAnchor="40.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="vasIDInfoTab" text="VasIDInfo">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TitledPane fx:id="vasInfoGroupTitledPane" animated="false" collapsible="false" prefHeight="335.0" prefWidth="572.0" text="PSP Value Added Service Group 20XX" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button fx:id="vasBtn" mnemonicParsing="false" onAction="#vasBtnClicked" prefHeight="21.0" prefWidth="235.0" text="VAS (CustomerInfo) (2000)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0" />
+                        <Button id="pspCommandBtn" fx:id="pspCommandGetBtn" mnemonicParsing="false" onAction="#pspCommandGetBtnClicked" prefHeight="21.0" prefWidth="235.0" text="PSPCommand(GET) (2002)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0" />
+                        <Button fx:id="customerIDBtn" mnemonicParsing="false" onAction="#customerIDBtnClicked" prefHeight="21.0" prefWidth="235.0" text="CustomerID (2001)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="70.0" />
+                        <Button fx:id="informationField1Btn" mnemonicParsing="false" onAction="#informationField1BtnClicked" prefHeight="21.0" prefWidth="235.0" text="InformationField1 (2006)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0" />
+                        <Button id="cardValiadationBtn" fx:id="cardValidationBtn" mnemonicParsing="false" onAction="#cardValidationBtnClicked" prefHeight="21.0" prefWidth="235.0" text="CardValidation (2015)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="130.0" />
+                        <Button fx:id="pspVASIDBtn" mnemonicParsing="false" onAction="#pspVASIDBtnClicked" prefHeight="21.0" prefWidth="235.0" text="PSP_VAS_ID (2008)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="160.0" />
+                        <Button fx:id="pspCommandGenerateSignatureTokenBtn" mnemonicParsing="false" onAction="#pspCommandGenerateSignatureTokenBtnClicked" prefHeight="21.0" prefWidth="235.0" text="PSPCommand(GenerateSignatureToken)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="190.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="customerDialogTab" text="CustomerDialog">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TitledPane fx:id="customerInfoGroupTitledPane" animated="false" collapsible="false" prefHeight="335.0" prefWidth="572.0" text="Customer Dialog Group 21XX" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button fx:id="customerDialogueHeaderBtn" mnemonicParsing="false" onAction="#customerDialogueHeaderBtnClicked" prefHeight="21.0" prefWidth="270.0" text="CustomerDialogueHeader (2100)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="textIDBtn" mnemonicParsing="false" onAction="#textIDBtnClicked" prefHeight="21.0" prefWidth="270.0" text="TextID (2101)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="40.0" />
+                        <Button fx:id="keyboardInputFormatBtn" mnemonicParsing="false" onAction="#keyboardInputFormatBtnClicked" prefHeight="21.0" prefWidth="270.0" text="KeyboardInputFormat (2102)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="70.0" />
+                        <Button fx:id="cardInputFormatBtn" mnemonicParsing="false" onAction="#cardInputFormatBtnClicked" prefHeight="21.0" prefWidth="270.0" text="CardInputFormat (2103)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="100.0" />
+                        <Button fx:id="keyboardMinCharBtn" mnemonicParsing="false" onAction="#keyboardMinCharBtnClicked" prefHeight="21.0" prefWidth="270.0" text="KeyboardMinChar (2104)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="130.0" />
+                        <Button fx:id="keyboardMaxCharBtn" mnemonicParsing="false" onAction="#keyboardMaxCharBtnClicked" prefHeight="21.0" prefWidth="270.0" text="KeyboardMaxChar (2105)" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="160.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="cardInfoTag" text="CardInfo">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TitledPane fx:id="cardInfoTitledPane" animated="false" collapsible="false" prefHeight="337.0" prefWidth="572.0" text="Card Info Group 30XX" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-2.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="311.0" prefWidth="564.0">
+                      <children>
+                        <Button fx:id="getCardInfoHeaderBtn" mnemonicParsing="false" onAction="#getCardInfoHeaderBtnClicked" prefHeight="21.0" prefWidth="270.0" text="GetCardInfoHeader (3010)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="6.0" />
+                        <Button fx:id="iccGroupIDBtn" mnemonicParsing="false" onAction="#iccGroupIDBtnClicked" prefHeight="21.0" prefWidth="270.0" text="ICCGroupID (3000)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="36.0" />
+                        <Button fx:id="countryCodeBtn" mnemonicParsing="false" onAction="#countryCodeBtnClicked" prefHeight="21.0" prefWidth="270.0" text="CountryCode (3003)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="126.0" />
+                        <Button fx:id="panBtn" mnemonicParsing="false" onAction="#panBtnClicked" prefHeight="21.0" prefWidth="270.0" text="PAN (3001)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="66.0" />
+                        <Button fx:id="cardRestrictionsBtn" mnemonicParsing="false" onAction="#cardRestrictionsBtnClicked" prefHeight="21.0" prefWidth="270.0" text="CardRestrictions (3004)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="156.0" />
+                        <Button fx:id="issuerIDBtn" mnemonicParsing="false" onAction="#issuerIDBtnClicked" prefHeight="21.0" prefWidth="270.0" text="IssuerID (3002)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="96.0" />
+                        <Button fx:id="track3Btn" mnemonicParsing="false" onAction="#track3BtnClicked" prefHeight="21.0" prefWidth="270.0" text="Track3 (3013)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="246.0" />
+                        <Button fx:id="chipLoyaltyBtn" mnemonicParsing="false" onAction="#chipLoyaltyBtnClicked" prefHeight="21.0" prefWidth="270.0" text="ChipLoyalty (3014)" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="66.0" />
+                        <Button fx:id="allTagsBtn" mnemonicParsing="false" onAction="#allTagsBtnClicked" prefHeight="21.0" prefWidth="270.0" text="RequestAllTags (3999)" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="96.0" />
+                        <Button fx:id="bankAgentBtn" mnemonicParsing="false" onAction="#bankAgentBtnClear" prefHeight="21.0" prefWidth="270.0" text="BankAgent (3012)" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="36.0" />
+                        <Button fx:id="cardFeeBtn" mnemonicParsing="false" onAction="#cardFeeBtnClicked" prefHeight="21.0" prefWidth="270.0" text="CardFee (3006)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="186.0" />
+                        <Button fx:id="track2Btn" mnemonicParsing="false" onAction="#track2BtnClicked" prefHeight="21.0" prefWidth="270.0" text="Track2 (3009)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="216.0" />
+                        <Button fx:id="tccBtn" mnemonicParsing="false" onAction="#tccBtnClicked" prefHeight="21.0" prefWidth="270.0" text="TCC (3011)" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="6.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="digitalAssetTab" text="DigitalAsset">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TitledPane fx:id="mandatoryTitledPane" animated="false" collapsible="false" prefHeight="167.0" prefWidth="572.0" text="Mandatory" AnchorPane.bottomAnchor="168.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button fx:id="digitalAssetHeaderBtn" mnemonicParsing="false" onAction="#digitalAssetHeaderBtnClicked" prefHeight="21.0" prefWidth="270.0" text="DigitalAssetHeader (2200)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="digitalAssetTypeBtn" mnemonicParsing="false" onAction="#digitalAssetTypeBtnClicked" prefHeight="21.0" prefWidth="270.0" text="DigitalAsset - type (2203)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+                        <Button fx:id="digitalAssetActionBtn" mnemonicParsing="false" onAction="#digitalAssetActionBtnClicked" prefHeight="21.0" prefWidth="270.0" text="DigitalAsset - action (2204)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane fx:id="optionalTitledPane" animated="false" collapsible="false" prefHeight="170.0" prefWidth="572.0" text="Optional" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="165.0">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button fx:id="apacsTypeBtn" mnemonicParsing="false" onAction="#apacsTypeBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Apacs :: type (2202)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="digitalAssetDataRAToDAMBtn" mnemonicParsing="false" onAction="#digitalAssetDataRAToDAMBtnClicked" prefHeight="21.0" prefWidth="270.0" text="DigitalAsset :: data_ra_to_dam (2207)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />
+                        <Button fx:id="promptConsumerCardBtn" mnemonicParsing="false" onAction="#promptConsumerCardBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Prompt :: Consumer card (2205)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0" />
+                        <Button fx:id="apacsEncryptionDescriptorBtn" mnemonicParsing="false" onAction="#apacsEncryptionDescriptorBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Apacs :: encryption descriptor (2201)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+                        <Button fx:id="promptConsumerKBDBtn" mnemonicParsing="false" onAction="#promptConsumerKBDBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Prompt :: Consumer kbd (2206)" AnchorPane.leftAnchor="290.0" AnchorPane.topAnchor="10.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab fx:id="ecrCmdTab" text="ECRCmd">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TitledPane fx:id="ecrCommandTitledPane" animated="false" collapsible="false" layoutX="0.0" layoutY="0.0" prefHeight="335.0000999999975" prefWidth="572.0" text="ECR Commands">
+                  <content>
+                    <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                      <children>
+                        <Button fx:id="ecrCmdEnveloperBtn" mnemonicParsing="false" onAction="#ecrCmdEnveloperBtnClicked" prefHeight="21.0" prefWidth="270.0" text="ECRCmdEnvelope (5000)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                        <Button fx:id="setPinPadBacklightBtn" mnemonicParsing="false" onAction="#setPinPadBacklightBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Set PinPad backlight (5001)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="40.0" />
+                        <Button fx:id="setCardReaderBacklightBtn" mnemonicParsing="false" onAction="#setCardReaderBacklightBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Set CardReader backlight (5002)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="100.0" />
+                        <Button fx:id="setPinShieldBacklightBtn" mnemonicParsing="false" onAction="#setPinShieldBacklightBtnClicked" prefHeight="21.0" prefWidth="270.0" text="Set PinShield backlight (5003)" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="70.0" />
+                      </children>
+                    </AnchorPane>
+                  </content>
+                </TitledPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Label fx:id="typelbl" prefWidth="35.0" text="Type" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="14.0" />
+    <TextField fx:id="typeTxt" prefWidth="116.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="61.0" />
+    <Label fx:id="tldFieldlbl" text="TLD Field" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="7.0" />
+    <TextField fx:id="tldFieldTxt" prefWidth="525.0" AnchorPane.bottomAnchor="65.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="14.0" />
+    <Label fx:id="separatorlbl" text="The separators must be surronded by spaces!" AnchorPane.bottomAnchor="92.0" AnchorPane.leftAnchor="180.0" />
+    <Button fx:id="clearBtn" mnemonicParsing="false" onAction="#clearBtnClicked" prefHeight="21.0" prefWidth="75.0" text="Clear" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="61.0" />
+    <Button fx:id="okBtn" mnemonicParsing="false" onAction="#okBtnClicked" prefHeight="21.0" prefWidth="75.0" text="OK" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="430.0" />
+    <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#cancelBtnClicked" prefHeight="21.0" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="33.0" AnchorPane.leftAnchor="511.0" />
+  </children>
+</AnchorPane>

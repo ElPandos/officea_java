@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="700.0" maxWidth="400.0" minHeight="639.0" minWidth="400.0" prefHeight="639.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.fxml.about.AboutController">
+    <children>
+        <VBox alignment="TOP_CENTER" prefHeight="415.0" prefWidth="718.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitWidth="400.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/AboutGIF.gif" />
+                    </image>
+                </ImageView>
+                <TextArea cacheShape="false" editable="false" focusTraversable="false" pickOnBounds="false" prefHeight="92.0" prefWidth="400.0" scrollLeft="1.0" style="-fx-border-color: transparent;" text="Officea Point of Sale System (Officea POS) är en produkt som tillverkats av Officea AB. Produkten är licenserad under gällande lagar och föreskrifter. Alla rättigheter ägs av Officea AB.  För mer information vänligen besök www.officea.se " wrapText="true">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </TextArea>
+                <TextArea fx:id="txtManufacturer" editable="false" prefHeight="237.0" prefWidth="400.0">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </TextArea>
+                <Button fx:id="btnClose" mnemonicParsing="false" onAction="#OnClose" text="Stäng" />
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

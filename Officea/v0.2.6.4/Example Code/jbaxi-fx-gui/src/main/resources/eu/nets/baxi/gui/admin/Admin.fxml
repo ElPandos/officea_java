@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?scenebuilder-stylesheet ../BaxiDark.css?>
+
+<AnchorPane id="AnchorPane" fx:id="adminPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="920.0" styleClass="background" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="eu.nets.baxi.gui.admin.AdminController">
+  <children>
+    <Label id="operIDlbl" fx:id="operIdlbl" text="OperID" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="30.0" />
+    <Label fx:id="adminCodelbl" text="Admin Code" AnchorPane.leftAnchor="152.0" AnchorPane.topAnchor="30.0" />
+    <TextField fx:id="operIDTxt" prefWidth="111.0" text="0000" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="49.0" />
+    <TextField fx:id="adminCodeTxt" prefWidth="111.0" AnchorPane.leftAnchor="152.0" AnchorPane.topAnchor="49.0" />
+    <Button fx:id="okBtn" mnemonicParsing="false" onAction="#okBtnClicked" prefHeight="21.0" prefWidth="75.0" text="OK" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="100.0" />
+    <Button fx:id="cancelBtn" cancelButton="true" mnemonicParsing="false" onAction="#cancelBtnClicked" prefHeight="21.0" prefWidth="75.0" text="Cancel" AnchorPane.bottomAnchor="19.0" AnchorPane.rightAnchor="18.0" />
+    <TitledPane fx:id="adminOpPane" animated="false" collapsible="false" minWidth="412.0" prefHeight="264.0" prefWidth="412.0" text="Admin Operation" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="28.0" AnchorPane.topAnchor="84.0">
+      <content>
+        <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="238.0" prefWidth="430.0">
+          <children>
+            <RadioButton fx:id="reconRadio" mnemonicParsing="false" text="Reconciliation" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="14.0">
+              <toggleGroup>
+                <ToggleGroup fx:id="adminToggle" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="readyRadio" mnemonicParsing="false" text="CLEAR" toggleGroup="$adminToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="42.0" />
+            <RadioButton fx:id="cancelRadio" mnemonicParsing="false" text="CANCEL" toggleGroup="$adminToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="67.0" />
+            <RadioButton fx:id="wrongRadio" mnemonicParsing="false" text="WRONG" toggleGroup="$adminToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="93.0" />
+            <RadioButton fx:id="annulRadio" mnemonicParsing="false" text="ANNUL" toggleGroup="$adminToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="119.0" />
+            <RadioButton fx:id="balanceRadio" mnemonicParsing="false" text="Balance" toggleGroup="$adminToggle" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="145.0" />
+            <RadioButton fx:id="xReportRadio" mnemonicParsing="false" text="X-report" toggleGroup="$adminToggle" AnchorPane.leftAnchor="13.0" AnchorPane.topAnchor="173.0" />
+            <RadioButton fx:id="zReportRadio" mnemonicParsing="false" text="Z-report" toggleGroup="$adminToggle" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="198.0" />
+            <RadioButton fx:id="sendOfflineRadio" mnemonicParsing="false" text="Send Offline" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="14.0" />
+            <RadioButton fx:id="turnoverReportRadio" mnemonicParsing="false" text="Turnover Report" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="41.0" />
+            <RadioButton fx:id="printEOTRadio" mnemonicParsing="false" text="Print EOT" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="67.0" />
+            <RadioButton fx:id="testCommsRadio" mnemonicParsing="false" text="Test Comms" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="93.0" />
+            <RadioButton fx:id="finishedRadio" mnemonicParsing="false" text="Finished" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="119.0" />
+            <RadioButton fx:id="lFReceiptRadio" mnemonicParsing="false" text="Last Financial Receipt" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="145.0" />
+            <RadioButton fx:id="lFResultRadio" mnemonicParsing="false" text="Last Financial Result" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="173.0" />
+            <RadioButton fx:id="softwareDownloadRadio" mnemonicParsing="false" text="Software Download" toggleGroup="$adminToggle" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="198.0" />
+            <RadioButton fx:id="datasetDownloadRadio" mnemonicParsing="false" text="Dataset Download" toggleGroup="$adminToggle" AnchorPane.leftAnchor="273.0" AnchorPane.topAnchor="14.0" />
+          </children>
+        </AnchorPane>
+      </content>
+    </TitledPane>
+    <Label fx:id="optionalDatalbl" prefWidth="132.0" text="Optional Data (JSON)" AnchorPane.leftAnchor="470.0" AnchorPane.topAnchor="14.0" />
+    <Button fx:id="multiterminalBtn" mnemonicParsing="false" onAction="#multiterminalBtnClicked" prefHeight="21.0" prefWidth="106.0" text="Multiterminal" AnchorPane.leftAnchor="470.0" AnchorPane.topAnchor="41.0" />
+    <Button fx:id="txnRefNrBtn" mnemonicParsing="false" onAction="#txnRefNrBtn" prefHeight="21.0" prefWidth="106.0" text="Txn. Ref. Nr" AnchorPane.leftAnchor="600.0" AnchorPane.topAnchor="41.0" />
+    <Button fx:id="allDataBtn" mnemonicParsing="false" onAction="#allDataBtnClicked" prefHeight="21.0" prefWidth="106.0" text="All Data" AnchorPane.leftAnchor="730.0" AnchorPane.topAnchor="41.0" />
+    <TextArea fx:id="optionalDataTxt" prefHeight="264.0" prefWidth="431.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="470.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="84.0" />
+  </children>
+</AnchorPane>

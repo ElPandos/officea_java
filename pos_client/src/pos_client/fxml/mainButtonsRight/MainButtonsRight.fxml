@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="200.0" maxWidth="1.7976931348623157E308" minHeight="200.0" minWidth="420.0" prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.fxml.mainButtonsRight.MainButtonsRightController">
+    <children>
+        <FlowPane fx:id="flwMainButtonsRight" hgap="5.0" layoutY="11.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="200.0" minWidth="402.0" prefHeight="200.0" prefWidth="704.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+            <children>
+                <Button fx:id="btnEdit" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnEditArticles" styleClass="function_buttons" text="REDIGERA">
+                    <graphic>
+                        <ImageView fx:id="btn_open_edit" fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/supplement-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnSpecial" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnBtnSpecial" styleClass="function_buttons" text="SPECIAL">
+                    <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/specials-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnArticles" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" styleClass="function_buttons" text="ARTIKLAR">
+                    <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/articles-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnScan" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" styleClass="function_buttons" text="SCANNA">
+                    <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/Scan-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnHistory" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnBtnHistory" styleClass="function_buttons" text="HISTORIK">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCustomers" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" styleClass="function_buttons" text="KUNDKORT">
+                    <graphic>
+                        <ImageView fitHeight="55.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/member-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnRefund" alignment="CENTER" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnReceiptRefund" styleClass="function_buttons" text="ÅTERKÖP">
+                    <graphic>
+                        <ImageView fitHeight="48.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/Return-Purchase-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnCASHBOX" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="83.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnOpenCashier" styleClass="function_buttons" text="ÖPPNA KASSALÅDA">
+                    <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/cash-drawer-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnPrintReceiptCopy" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="83.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnReceiptCopy" styleClass="function_buttons" text="Skriv ut kvittokopia">
+                    <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/copy-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnPrintBill" layoutX="335.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="85.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnBtnPrintBill" styleClass="function_buttons" text="SKRIV UT NOTA" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+                <Button fx:id="btnSetTableNumber" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="83.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnSetTableNumber" styleClass="function_buttons" text="BORD">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                    <graphic>
+                        <ImageView fitHeight="150.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/table-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="logout_button" contentDisplay="TOP" maxHeight="1.7976931348623157E308" maxWidth="75.0" minHeight="83.0" minWidth="75.0" mnemonicParsing="false" onAction="#OnButtonLogout" text="LOGGA UT" textAlignment="CENTER">
+                    <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../images/Button_icons/lock-icon.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets left="5.0" />
+            </padding>
+        </FlowPane>
+    </children>   
+</AnchorPane>

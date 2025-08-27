@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.embed.swing.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pos_client.settings.SettingsReceiptExtrasController">
+    <children>
+        <SplitPane dividerPositions="0.5707964601769911" layoutX="-28.0" layoutY="-86.0" orientation="VERTICAL" prefHeight="700.0" prefWidth="1180.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <children>
+                        <SplitPane dividerPositions="0.46262886597938147" layoutX="745.0" layoutY="112.0" prefHeight="384.0" prefWidth="1158.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="200.0">
+                                    <children>
+                                        <TitledPane animated="false" collapsible="false" prefHeight="438.0" prefWidth="221.0" text="Företagsinformation" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                    <children>
+                                                        <GridPane layoutX="14.0" layoutY="23.0" prefHeight="316.0" prefWidth="305.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                            <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                            </columnConstraints>
+                                                            <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                            </rowConstraints>
+                                                            <children>
+                                                                <TextField fx:id="txtOrgNo" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Organisationsnummer" />
+                                                                <TextField fx:id="txtName" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Företagsnamn" GridPane.rowIndex="1" />
+                                                                <TextField fx:id="txtAddress1" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Adress 1" GridPane.rowIndex="2" />
+                                                                <TextField fx:id="txtAddress2" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Adress 2" GridPane.rowIndex="3" />
+                                                                <TextField fx:id="txtPostal" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Postnummer" GridPane.rowIndex="4" />
+                                                                <TextField fx:id="txtCity" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Postort" GridPane.rowIndex="5" />
+                                                                <TextField fx:id="txtPhone" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Telefon" GridPane.rowIndex="6" />
+                                                                <TextField fx:id="txtWebsite" maxHeight="30.0" minHeight="30.0" prefHeight="0.0" prefWidth="0.0" promptText="Hemsida" GridPane.rowIndex="7" />
+                                                            </children>
+                                                        </GridPane>
+                                                    </children>
+                                                </AnchorPane>
+                                            </content>
+                                        </TitledPane>
+                                    </children>
+                                </AnchorPane>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                    <children>
+                                        <Accordion prefHeight="382.0" prefWidth="818.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <panes>
+                                                <TitledPane animated="false" prefHeight="225.0" prefWidth="306.0" text="Kvittohuvud">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                            <children>
+                                                                <GridPane prefHeight="196.0" prefWidth="304.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <columnConstraints>
+                                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                    </columnConstraints>
+                                                                    <rowConstraints>
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                    </rowConstraints>
+                                                                    <children>
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 4" GridPane.rowIndex="3" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="78.0" prefWidth="0.0" promptText="Rad 5" GridPane.rowIndex="4" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 3" GridPane.rowIndex="2" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 2" GridPane.rowIndex="1" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 1" />
+                                                                    </children>
+                                                                </GridPane>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="171.0" prefWidth="306.0" text="Kvittofot">
+                                                    <content>
+                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                            <children>
+                                                                <GridPane prefHeight="196.0" prefWidth="304.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                                    <children>
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 4" GridPane.rowIndex="3" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="78.0" prefWidth="0.0" promptText="Rad 5" GridPane.rowIndex="4" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 3" GridPane.rowIndex="2" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 2" GridPane.rowIndex="1" />
+                                                                        <TextField maxHeight="30.0" minHeight="30.0" minWidth="0.0" prefHeight="25.0" prefWidth="0.0" promptText="Rad 1" />
+                                                                    </children>
+                                                                    <columnConstraints>
+                                                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                                    </columnConstraints>
+                                                                    <rowConstraints>
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                    </rowConstraints>
+                                                                </GridPane>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </content>
+                                                </TitledPane>
+                                            </panes>
+                                        </Accordion>
+                                    </children>
+                                </AnchorPane>
+                            </items>
+                        </SplitPane>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                    <children>
+                        <FlowPane hgap="5.0" prefHeight="330.0" prefWidth="778.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#saveboutique" prefHeight="31.0" prefWidth="138.0" text="Spara" />
+                            </children>
+                        </FlowPane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </children>
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+</AnchorPane>
